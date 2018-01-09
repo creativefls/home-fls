@@ -50,6 +50,95 @@
       height: 256px;
       width: 256px;
     }
+    /*=========================
+            Icons
+     ================= */
+
+    /* footer social icons */
+    ul.social-network {
+    	list-style: none;
+    	display: inline;
+    	margin-left:0 !important;
+    	padding: 0;
+    }
+    ul.social-network li {
+    	display: inline;
+    	margin: 0 5px;
+    }
+
+    /* footer social icons hover  */
+    .social-network a.icoInstagram:hover {
+      background-color: white;
+    }
+    .social-network a.icoFacebook:hover {
+    	background-color:#3B5998;
+    }
+    .social-network a.icoTwitter:hover {
+    	background-color:#33ccff;
+    }
+    .social-network a.icoGoogle:hover {
+    	background-color:#BD3518;
+    }
+    .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+    .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+    	color:#fff;
+    }
+    a.socialIcon:hover, .socialHoverClass {
+    	color:#44BCDD;
+    }
+
+    .social-circle li a {
+    	display:inline-block;
+    	position:relative;
+    	margin:0 auto 0 auto;
+    	-moz-border-radius:50%;
+    	-webkit-border-radius:50%;
+    	border-radius:50%;
+    	text-align:center;
+    	width: 50px;
+    	height: 50px;
+    	font-size:20px;
+    }
+    .social-circle li i {
+    	margin:0;
+    	line-height:50px;
+    	text-align: center;
+    }
+
+    .social-circle li a:hover i, .triggeredHover {
+    	-moz-transform: rotate(360deg);
+    	-webkit-transform: rotate(360deg);
+    	-ms--transform: rotate(360deg);
+    	transform: rotate(360deg);
+    	-webkit-transition: all 0.2s;
+    	-moz-transition: all 0.2s;
+    	-o-transition: all 0.2s;
+    	-ms-transition: all 0.2s;
+    	transition: all 0.2s;
+    }
+    .social-circle i {
+    	color: white;
+    	-webkit-transition: all 0.8s;
+    	-moz-transition: all 0.8s;
+    	-o-transition: all 0.8s;
+    	-ms-transition: all 0.8s;
+    	transition: all 0.8s;
+    }
+    .social-circle .icoFacebook i  {
+    	color:#3B5998;
+    }
+    .social-circle .icoTwitter i  {
+    	color:#33ccff;
+    }
+    .social-circle .icoGoogle i  {
+    	color:#BD3518;
+    }
+    .social-circle .icoInstagram i  {
+    	color:#aa034e;
+    }
+    .footer{
+      height: 300px
+    }
   </style>
 </head>
 
@@ -178,83 +267,73 @@
     </div>
 
   </section>
+
+  <!-- footer -->
   <footer class="footer">
+
   <div class="container">
     <div class="columns">
-      <div class="column is-3">
-        <div id="about" class="content">
-          <strong xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Bulma</strong> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://jgthms.com" property="cc:attributionName" rel="cc:attributionURL">Jeremy Thomas</a>.
-          <div class="twitter-container">
-            <a href="{{ site.twitter }}" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="large">@jgthms</a>
-          </div>
-          <p id="alternative">
-            <a href="{{ site.url }}/alternative-to-bootstrap/">An alternative to <strong>Bootstrap</strong></a>
-          </p>
-        </div>
-      </div>
-      <div class="column is-5">
-        <div id="share" class="content">
+      <div class="column is-one-third">
+        <div id="contact" class="content">
           <div>
-            <strong>Support</strong> and share the love!
+            <h4>
+              <b>HUBUNGI KAMI</b>
+            </h4>
           </div>
-          <div id="social">
-            <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=jgthms&repo=bulma&type=star&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-
-            <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ site.title }}" data-url="{{ site.url }}" data-count="horizontal" data-via="jgthms" data-related="jgthms:Creator of Bulma" data-size="large">Tweet</a>
-
-            <div class="fb-like" data-href="https://www.facebook.com/bulmaio" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
-
-            <a class="bd-patreon-button" href="https://www.patreon.com/jgthms" target="_blank">
-              <img src="/images/patreon.png" alt="Become a patron">
-            </a>
-
-            <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="8WMKYSRFN6A78">
-              <input type="image" src="{{site.url}}/images/paypal-donate.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online." height="30">
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-            </form>
+          <div id="contact">
+            <ul>
+              <li class="fa fa-phone"> 0858 4222 6266 (Efril)</li>
+              <li class="fa fa-phone"> 0857 4288 8032 (Yunita)</li>
+              <li class="fa fa-envelope"> info[at]futureleadersummit.org</li>
+              <li class="fa fa-envelope"> futureleadersummit[at]gmail.org</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="column is-4">
-        <div id="sister">
-          <p>
-            More <strong>helpful</strong> tools:
-          </p>
-          <ul>
-            <li>
-              <a href="http://cssreference.io">
-                <img src="{{site.url}}/images/css-reference-logo.png" alt="CSS Reference logo">
-              </a>
-            </li>
-            <li>
-              <a href="http://htmlreference.io">
-                <img src="{{site.url}}/images/html-reference-logo.png" alt="HTML Reference logo">
-              </a>
-            </li>
-          </ul>
+      <div class="column Auto">
+        <div id="about" class="content">
+          <div>
+            <h4>
+              <b>ABOUT</b>
+            </h4>
+          </div>
+          <div class="content">
+            <p>Future Leader Summit (FLS) merupakan konferensi nasional pemuda tahunan yang digagas oleh
+              Nusantara Muda sejak 2011.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column Auto">
+        <div id="follow-us" class="content">
+          <div>
+            <h4>
+              <b>IKUTI KAMI</b>
+            </h4>
+          </div>
+          <div class="">
+            <p>Ingin mendapatkan informasi terbaru seputar <b>Future Leader Summit</b> ?</p>
+            <p>Follow us on :</p>
+          </div>
+          <ul class="social-network social-circle">
+                   <!--                      <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>-->
+                   <li><a target="_blank" href="https://web.facebook.com/FutureLeaderSummit" class="icoFacebook" title="Facebook"><i class="fa fa-facebook sc"></i></a></li>
+                   <li><a target="_blank" href="https://twitter.com/flsummit" class="icoTwitter" title="Twitter"><i class="fa fa-twitter sc"></i></a></li>
+                   <li><a target="_blank" href="https://plus.google.com/101582294656647784536" class="icoGoogle" title="Google +"><i class="fa fa-youtube-play sc"></i></a></li>
+                   <li><a target="_blank" href="https://instagram.com/flsummit" class="icoInstagram" title="Instagram"><i class="fa fa-instagram sc"></i></a></li>
+                   <!--                      <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin sc"></i></a></li>-->
+
+               </ul>
         </div>
       </div>
     </div>
 
     <div class="columns">
-      <div class="column is-3">
-        <p id="tsp">
-          <a href="{{ site.url }}/made-with-bulma/">
-            <img src="{{ site.url }}/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-          </a>
-          <small>
-            Get the <a href="{{ site.url }}/made-with-bulma/">badge</a>!
-            <br>
-            Source code licensed <a href="https://opensource.org/licenses/mit-license.php">MIT</a>.
-            <br>
-            Website content licensed <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
-          </small>
-        </p>
+      <div class="column is-full">
+        <center>Made with <i class="fa fa-heart"></i><a href="https://github.com/creativefls" target="blank_"> Creative & IT FLS</a> © 2018</center>
       </div>
     </div>
   </div>
+
 </footer>
 </body>
 
