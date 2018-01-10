@@ -244,11 +244,24 @@
               </figure>
           </div>
           <div class="column is-6">
-            <a href="#">
+            <!-- <a href="#">
               <span class="icon is-large">
                 <i class="fa fa-3x fa-instagram"></i>
               </span>
-            </a>
+            </a> -->
+            <div id="app-insta">
+              <div class="columns is-multiline">
+                <div v-for="insta, index in instaFeed" :key="insta.id" v-if="index < 9" class="column is-4">
+                  <figure class="image">
+                    <a href="https://www.instagram.com/flsummit/">
+                      <img :src=" insta.thumbnail_src" alt="fls image">
+                    </a>
+                  </figure>
+                  
+
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -326,6 +339,8 @@
 </footer>
 </body>
 
+<script src="assets/js/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
   var scrollDownHero = function () {
     // biar waktu ngeklik nyecrollnya smoth
@@ -333,6 +348,31 @@
       behavior: 'smooth'
     });
   }
+
+  var appInsta = new Vue({
+    el: '#app-insta',
+    data: {
+      message: 'Hello Vue!',
+      instaFeed: []
+    },
+    methods: {
+      getDataInsta() {
+        var that = this // this di dalam then tidak bisa bekerja
+        axios.get('https://www.instagram.com/flsummit/?__a=1')
+          .then(function (response) {
+            that.instaFeed = response.data.user.media.nodes
+            console.log('respons data: ', that.instaFeed);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+    },
+    created() {
+      this.getDataInsta()
+    }
+  })
+
 </script>
 
 </html>
