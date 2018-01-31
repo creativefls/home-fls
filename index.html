@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/flsbulma.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body>
@@ -121,14 +120,16 @@
                   alt="line barcode">
               </figure>
           </div>
+
           <div class="column is-6">
+
             <!-- <a href="#">
               <span class="icon is-large">
                 <i class="fa fa-3x fa-instagram"></i>
               </span>
             </a> -->
-            <div id="app-insta">
-              <div class="columns is-multiline">
+            <div id="app-insta" class="box">
+              <div class="columns is-variable is-multiline is-mobile is-1">
                 <div v-for="insta, index in instaFeed" :key="insta.id" v-if="index < 9" class="column is-4">
                   <figure class="image">
                     <a href="https://www.instagram.com/flsummit/">
