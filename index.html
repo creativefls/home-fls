@@ -24,18 +24,18 @@
             <a class="navbar-item">
               <img src="https://futureleadersummit.org/assets/img/logo/fls-logo.png" alt="Logo">
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+            <Button class="navbar-burger burger" data-target="navbarMenuHeroA">
               <span></span>
               <span></span>
               <span></span>
-            </span>
+            </Button>
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
-            <div class="navbar-end">
+            <div id="testing" class="navbar-end">
               <span class="navbar-item">
                 <!-- nge link ke galeri -->
                 <a class="button is-white is-outlined">
-                  <span>Recap 2017</span>
+                  <span id="recap">Recap 2017</span>
                   <span class="icon">
                     <i class="fa fa-lg fa-backward"></i>
                   </span>
@@ -43,7 +43,7 @@
               </span>
               <span class="navbar-item">
                 <a class="button is-white is-outlined">
-                  <span>View Full Video</span>
+                  <span id="full-video">View Full Video</span>
                   <span class="icon">
                     <i class="fa fa-lg fa-youtube-play"></i>
                   </span>
@@ -251,6 +251,33 @@
     }
   })
 
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Get all "navbar-burger" elements
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function () {
+
+          // Get the target from the "data-target" attribute
+          var target = $el.dataset.target;
+          var $target = document.getElementById(target);
+          var $targeticon1 = document.getElementById('recap');
+          var $targeticon2 = document.getElementById('full-video');
+          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+          $el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+          $targeticon1.style.color = "black";
+          $targeticon2.style.color = "black";
+        });
+      });
+    }
+
+    });
 </script>
 
 </html>
