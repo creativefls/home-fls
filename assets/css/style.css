@@ -5,6 +5,7 @@
   top: 0;
   min-width: 100%;
   min-height: 100%;
+  background-color: black;
 }
 .fls-hero-video * {
   color: white;
@@ -27,6 +28,10 @@ a.button.is-outlined:hover * {
 .image.line-acc-fls {
   height: 256px;
   width: 256px;
+}
+button.navbar-burger {
+  background-color: black;
+  border: 0;
 }
 /*=========================
         Icons
