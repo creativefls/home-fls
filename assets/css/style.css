@@ -5,6 +5,7 @@
   top: 0;
   min-width: 100%;
   min-height: 100%;
+  background-color: black;
 }
 .fls-hero-video * {
   color: white;
@@ -21,15 +22,16 @@
 .button.is-rounded {
   border-radius: 20px;
 }
-.hero.is-primary {
-  background-color: #463272;
-}
 a.button.is-outlined:hover * {
   color: black !important;
 }
-.image.is-128x128 {
+.image.line-acc-fls {
   height: 256px;
   width: 256px;
+}
+button.navbar-burger {
+  background-color: black;
+  border: 0;
 }
 /*=========================
         Icons
