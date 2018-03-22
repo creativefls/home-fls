@@ -133,7 +133,7 @@
                 <div v-for="insta, index in instaFeed" :key="insta.id" v-if="index < 9" class="column is-4">
                   <figure class="image">
                     <a href="https://www.instagram.com/flsummit/">
-                      <img :src=" insta.thumbnail_src" alt="fls image">
+                      <img :src=" insta.node.thumbnail_src" alt="fls image">
                     </a>
                   </figure>
                 </div>
@@ -237,7 +237,7 @@
         var that = this // this di dalam then tidak bisa bekerja
         axios.get('https://www.instagram.com/flsummit/?__a=1')
           .then(function (response) {
-            that.instaFeed = response.data.user.media.nodes
+            that.instaFeed = response.data.graphql.user.edge_owner_to_timeline_media.edges
             console.log('respons data: ', that.instaFeed);
           })
           .catch(function (error) {
