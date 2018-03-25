@@ -27,9 +27,14 @@
       </nuxt-link>
       <v-spacer></v-spacer>
       <div class="align-center hidden-sm-and-down" style="margin-left: auto">
-        <v-btn to="/inspire" outline >Link One</v-btn>
-        <v-btn flat>Link Two</v-btn>
-        <v-btn flat>Link Three</v-btn>
+        <v-btn outline>
+          Recap 2017
+          <v-icon size="medium" class="ml-1">fa-backward</v-icon>
+        </v-btn>
+        <v-btn outline href="https://www.youtube.com/watch?v=rbIo5dDwxX4">
+          View Full Video
+          <v-icon size="medium" class="ml-1">fa-youtube-play</v-icon>
+        </v-btn>
       </div>
       <v-btn
         icon
@@ -47,7 +52,7 @@
       <v-container fill-height>
         <v-layout align-center>
           <v-flex text-xs-center>
-            <h3 class="display-3">Gradient over Image {{ toolbarColor }} </h3>
+            <h3 class="display-3">Ready for being a Leader?</h3>
           </v-flex>
         </v-layout>
       </v-container>
