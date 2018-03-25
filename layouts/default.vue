@@ -57,16 +57,16 @@
         </v-layout>
       </v-container>
     </v-jumbotron>
-    <v-content>
+    <v-content :class="$route.path == '/' ? 'pt-0' : ''">
       <nuxt />
     </v-content>
-    <v-footer>
-      <span>&copy; 2017</span>
-    </v-footer>
+    <layout-footer></layout-footer>
   </v-app>
 </template>
 
 <script>
+import LayoutFooter from '@/components/layouts/Footer'
+
 export default {
   data () {
     return {
@@ -92,7 +92,8 @@ export default {
     onScroll (e) {
       this.scroll = document.documentElement.scrollTop
     }
-  }
+  },
+  components: { LayoutFooter }
 }
 </script>
 
