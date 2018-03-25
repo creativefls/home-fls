@@ -17,20 +17,20 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar :color="toolbarColor" class="d-flex" scroll-off-screen flat dark app>
-      <v-toolbar-title>
-        <v-avatar tile>
-          <img src="https://user-images.githubusercontent.com/21119252/34459239-16407fee-ee1d-11e7-94c1-dc6446f962b0.png" alt="FLS Logo">
-        </v-avatar>
-        <!-- <v-btn icon>
-        </v-btn> -->
-      </v-toolbar-title>
+    <v-toolbar :color="toolbarColor" class="d-flex" scroll-off-screen dense flat dark app>
+      <nuxt-link to="/">
+        <v-toolbar-title>
+          <v-avatar tile>
+            <img src="https://user-images.githubusercontent.com/21119252/34459239-16407fee-ee1d-11e7-94c1-dc6446f962b0.png" alt="FLS Logo">
+          </v-avatar>
+        </v-toolbar-title>
+      </nuxt-link>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>Link One</v-btn>
+      <div class="align-center hidden-sm-and-down" style="margin-left: auto">
+        <v-btn to="/inspire" outline >Link One</v-btn>
         <v-btn flat>Link Two</v-btn>
         <v-btn flat>Link Three</v-btn>
-      </v-toolbar-items>
+      </div>
       <v-btn
         icon
         class="hidden-md-and-up"
@@ -39,6 +39,7 @@
       </v-btn>
     </v-toolbar>
     <v-jumbotron
+      v-if="$route.path == '/'"
       src="https://vuetifyjs.com/static/doc-images/parallax/material2.jpg"
       :gradient="gradient"
       v-scroll="onScroll"
@@ -75,10 +76,10 @@ export default {
   },
   computed: {
     toolbarColor () {
-      if (this.scroll > 50) {
-        return 'primary'
-      } else {
+      if (this.scroll < 50 && this.$route.path == '/') {
         return 'transparent'
+      } else {
+        return 'dark'
       }
     }
   },
@@ -93,15 +94,19 @@ export default {
 <style lang="stylus">
 nav
   justify-content center
+  padding 6px 0
   .toolbar__content
     @media only screen and (min-device-width: 960px)
       max-width 80%
   .toolbar__title
+    margin-left 0
     .avatar.avatar--tile
       height 36px !important
       width 100% !important
   .btn
     text-transform capitalize
+    font-size 16px
+    font-weight 400
 
 .jumbotron
   min-height 100vh
