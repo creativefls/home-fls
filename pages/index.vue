@@ -1,8 +1,8 @@
 <template>
   <v-container fluid>
     <fls-quote></fls-quote>
-    <v-jumbotron color="success" dark height="unset">
-      <v-container>
+    <v-jumbotron color="success" dark>
+      <v-container fill-height>
         <v-layout wrap>
           <v-flex md6>
             <v-card flat color="transparent">
@@ -12,7 +12,7 @@
             </v-card>
           </v-flex>
           <v-flex md6>
-            <v-card color="white">
+            <v-card color="white" class="pa-2">
               <v-container fluid grid-list-sm>
                 <v-layout row wrap>
                   <v-flex xs4  v-for="(insta, index) in instaFeed" :key="insta.id" v-if="index < 9">

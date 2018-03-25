@@ -1,5 +1,8 @@
 <template>
   <v-app>
+     <video autoplay muted loop id="myVideo">
+      <source src="http://static.futureleadersummit.org/assets/landing_without_bumper.webm" type="video/mp4"> Your browser does not support HTML5 video.
+    </video>
     <v-navigation-drawer
       temporary
       v-model="navDrawer"
@@ -45,8 +48,6 @@
     </v-toolbar>
     <v-jumbotron
       v-if="$route.path == '/'"
-      src="https://vuetifyjs.com/static/doc-images/parallax/material2.jpg"
-      :gradient="gradient"
       v-scroll="onScroll"
       dark >
       <v-container fill-height>
@@ -116,4 +117,13 @@ nav
 
 .jumbotron
   min-height 100vh
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: black;
+}
 </style>
