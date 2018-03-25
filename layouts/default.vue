@@ -84,7 +84,7 @@ export default {
       if (this.scroll < 50 && this.$route.path == '/') {
         return 'transparent'
       } else {
-        return 'dark'
+        return 'accent'
       }
     }
   },

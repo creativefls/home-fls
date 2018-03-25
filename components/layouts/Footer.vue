@@ -16,10 +16,10 @@
           </v-btn>
         </v-container>
       </v-card-title>
-      <v-card-text class="grey lighten-3">
+      <v-card-text class="cloud">
         <v-container>
-          <v-layout>
-            <v-flex class="px-3" md4 column>
+          <v-layout wrap class="text-xs-center">
+            <v-flex class="pa-3" md4>
               <p class="subheading">HUBUNGI KAMI</p>
               <div>
                 <v-icon size="small" class="mr-1">fa-envelope</v-icon>
@@ -43,13 +43,13 @@
                 <v-icon size="24px">{{ icon.name }}</v-icon>
               </v-btn>
             </v-flex>
-            <v-flex class="px-3" md4>
+            <v-flex class="pa-3" md4>
               <p class="subheading">TENTANG</p>
               <div>
                 Future Leader Summit (FLS) merupakan konferensi nasional pemuda tahunan yang digagas oleh Nusantara Muda sejak 2011.
               </div>
             </v-flex>
-            <v-flex class="px-3" md4>
+            <v-flex class="pa-3" md4>
               <v-card flat>
                 <v-card-text>
                   <div class="subheading">
@@ -76,7 +76,7 @@
           </v-layout>
         </v-container>
       </v-card-text>
-      <v-card-actions class="grey lighten-2 justify-center">
+      <v-card-actions class="silver justify-center">
         &copy; {{ new Date().getUTCFullYear() }} — <strong>CreativeFLS</strong>
       </v-card-actions>
     </v-card>
