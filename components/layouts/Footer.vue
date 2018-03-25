@@ -1,7 +1,7 @@
 <template>
   <v-footer height="auto">
     <v-card flat tile>
-      <v-card-title class="primary white--text">
+      <v-card-title v-if="false" class="primary white--text">
         <v-container>
           <strong class="subheading">Ingin mendapatkan informasi terbaru seputar Future Leader Summit ? Ikuti kami</strong>
           <v-spacer></v-spacer>
@@ -19,36 +19,59 @@
       <v-card-text class="grey lighten-3">
         <v-container>
           <v-layout>
-            <v-flex
-              v-for="(col, i) in rows"
-              :key="i"
-              xs3
-            >
-              <span class="body-2" v-text="col.title.toUpperCase()"/>
-              <div
-                v-for="(child, i) in col.children"
-                :key="i"
-                v-text="child"
-              />
+            <v-flex class="px-3" md4 column>
+              <p class="subheading">HUBUNGI KAMI</p>
+              <div>
+                <v-icon size="small" class="mr-1">fa-envelope</v-icon>
+                info[at]futureleadersummit.org
+              </div>
+              <div>
+                <v-icon size="small" class="mr-1">fa-envelope</v-icon>
+                futureleadersummit[at]gmail.com
+              </div>
+              <div>
+                <v-icon size="small" class="mr-1">fa-phone</v-icon>
+                081 2525 29921 (Kiki)
+              </div>
+              <v-btn
+                v-for="icon in icons"
+                :key="icon.name"
+                icon
+                outline
+                :href="icon.link"
+                class="mx-3">
+                <v-icon size="24px">{{ icon.name }}</v-icon>
+              </v-btn>
             </v-flex>
-            <v-flex xs3 layout column>
-              <span class="body-2">CONTACT</span>
+            <v-flex class="px-3" md4>
+              <p class="subheading">TENTANG</p>
               <div>
-                <v-icon size="18px" class="mr-3">fa-home</v-icon>
-                New York, NY 10012, US
+                Future Leader Summit (FLS) merupakan konferensi nasional pemuda tahunan yang digagas oleh Nusantara Muda sejak 2011.
               </div>
-              <div>
-                <v-icon size="18px" class="mr-3">fa-envelope</v-icon>
-                info@example.com
-              </div>
-              <div>
-                <v-icon size="18px" class="mr-3">fa-phone</v-icon>
-                + 01 234 567 88
-              </div>
-              <div>
-                <v-icon size="18px" class="mr-3">fa-print</v-icon>
-                + 01 234 567 89
-              </div>
+            </v-flex>
+            <v-flex class="px-3" md4>
+              <v-card flat>
+                <v-card-text>
+                  <div class="subheading">
+                    Dapatkan Info Terbaru dari Kami
+                  </div>
+                  <v-text-field
+                    name="input-1"
+                    label="First Name"
+                    id="testing"></v-text-field>
+                  <v-text-field
+                    name="input-1"
+                    label="Last Name"
+                    id="testing"></v-text-field>
+                  <v-text-field
+                    name="input-1"
+                    label="Email"
+                    id="testing"></v-text-field>
+                  <v-btn color="primary" block depressed>Subscribe</v-btn>
+
+                </v-card-text>
+
+              </v-card>
             </v-flex>
           </v-layout>
         </v-container>
@@ -63,25 +86,10 @@
 export default {
   data: () => ({
     icons: [
-      { name: 'fa-facebook', link: 'https://google.com' },
-      { name: 'fa-twitter', link: '' },
-      { name: 'fa-google-plus', link: '' },
-      { name: 'fa-linkedin', link: '' },
-      { name: 'fa-instagram', link: '' }
-    ],
-    rows: [
-      {
-        title: 'Company Name',
-        children: ['Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit']
-      },
-      {
-        title: 'Products',
-        children: ['MDBootstrap', 'MDWordPress', 'BrandFlow', 'Bootstrap Angular']
-      },
-      {
-        title: 'Useful Links',
-        children: ['Your account', 'Become an Affiliate', 'Shipping Rates', 'Helper']
-      }
+      { name: 'fa-facebook', link: 'https://facebook.com/FutureLeaderSummit' },
+      { name: 'fa-twitter', link: 'https://twitter.com/flsummit' },
+      { name: 'fa-instagram', link: 'https://instagram.com/flsummit' },
+      { name: 'fa-youtube-play', link: 'https://youtube.com/user/FLSummit' },
     ]
   })
 }
