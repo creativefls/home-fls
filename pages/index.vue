@@ -34,11 +34,10 @@
 </template>
 
 <script>
-import TestComponent from '~/components/home-page/TestComponent'
 import FlsQuote from '~/components/sections/QuoteHome'
 
 export default {
-  components: { TestComponent, FlsQuote },
+  components: { FlsQuote },
   data () {
     return {
       instaFeed: []
