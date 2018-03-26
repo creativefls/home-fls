@@ -12,7 +12,7 @@
             <h2 class="subtitle">
               &mdash;
             </h2>
-            <v-btn color="error" large round depressed>Take Your First Move</v-btn>
+            <v-btn href="/artikel" color="error" large round depressed>Take Your First Move</v-btn>
           </v-flex>
         </v-layout>
       </v-container>

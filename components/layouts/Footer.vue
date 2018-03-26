@@ -57,27 +57,22 @@
                   </div>
                   <v-text-field
                     name="input-1"
-                    label="First Name"
-                    id="testing"></v-text-field>
+                    label="First Name"></v-text-field>
                   <v-text-field
-                    name="input-1"
-                    label="Last Name"
-                    id="testing"></v-text-field>
+                    name="input-2"
+                    label="Last Name"></v-text-field>
                   <v-text-field
-                    name="input-1"
-                    label="Email"
-                    id="testing"></v-text-field>
+                    name="input-3"
+                    label="Email"></v-text-field>
                   <v-btn color="primary" block depressed>Subscribe</v-btn>
-
                 </v-card-text>
-
               </v-card>
             </v-flex>
           </v-layout>
         </v-container>
       </v-card-text>
       <v-card-actions class="silver justify-center">
-        &copy; {{ new Date().getUTCFullYear() }} — <strong>CreativeFLS</strong>
+        &copy; {{ new Date().getUTCFullYear() }} — <a href="https://github.com/creativefls/"><strong>CreativeFLS</strong></a>
       </v-card-actions>
     </v-card>
   </v-footer>
