@@ -109,7 +109,7 @@ nav
     margin-left 0
     .avatar.avatar--tile
       height 36px !important
-      width 100% !important
+      width auto !important
   .btn
     text-transform capitalize
     font-size 16px
