@@ -49,7 +49,6 @@ export default {
         this.$axios.get('https://www.instagram.com/flsummit/?__a=1')
           .then(function (response) {
             that.instaFeed = response.data.graphql.user.edge_owner_to_timeline_media.edges
-            console.log('respons data: ', that.instaFeed);
           })
           .catch(function (error) {
             console.log(error);
