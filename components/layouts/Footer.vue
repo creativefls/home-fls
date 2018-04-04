@@ -18,7 +18,7 @@
       </v-card-title>
       <v-card-text class="cloud">
         <v-container>
-          <v-layout wrap class="text-xs-center">
+          <v-layout justify-center wrap class="text-xs-center">
             <v-flex class="pa-3" md4>
               <p class="subheading">HUBUNGI KAMI</p>
               <div>
@@ -53,15 +53,15 @@
               <v-card flat>
                 <v-card-text>
                   <div class="subheading">
-                    Dapatkan Info Terbaru dari Kami
+                    Tinggalkan Pesan
                   </div>
-                  <v-layout>
-                    <v-flex class="pr-1">
+                  <v-layout wrap>
+                    <v-flex md6 class="px-1">
                       <v-text-field
                         name="input-1"
                         label="Nama Depan"></v-text-field>
                     </v-flex>
-                    <v-flex class="pl-1">
+                    <v-flex md6 class="px-1">
                       <v-text-field
                         name="input-2"
                         label="Nama Belakang"></v-text-field>
@@ -107,9 +107,9 @@ export default {
 .card
   width 100%
 
-.footer
-  .container
-    display flex
-    flex-wrap wrap
-    align-items center
+// .footer
+//   .container
+//     display flex
+//     flex-wrap wrap
+//     align-items center
 </style>
