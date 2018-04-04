@@ -30,11 +30,11 @@
       </nuxt-link>
       <v-spacer></v-spacer>
       <div class="align-center hidden-sm-and-down" style="margin-left: auto">
-        <v-btn outline>
+        <v-btn outline round>
           Recap 2017
           <v-icon size="medium" class="ml-1">fa-backward</v-icon>
         </v-btn>
-        <v-btn outline href="https://www.youtube.com/watch?v=rbIo5dDwxX4">
+        <v-btn outline round href="https://www.youtube.com/watch?v=rbIo5dDwxX4">
           View Full Video
           <v-icon size="medium" class="ml-1">fa-youtube-play</v-icon>
         </v-btn>
@@ -102,6 +102,7 @@ export default {
 nav
   justify-content center
   padding 6px 0
+  opacity 0.8
   .toolbar__content
     @media only screen and (min-device-width: 960px)
       max-width 80%
