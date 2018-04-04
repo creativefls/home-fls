@@ -1,8 +1,5 @@
 <template>
   <v-app>
-     <video autoplay muted loop id="myVideo">
-      <source src="http://static.futureleadersummit.org/assets/landing_without_bumper.webm" type="video/mp4"> Your browser does not support HTML5 video.
-    </video>
     <v-navigation-drawer
       temporary
       v-model="navDrawer"
@@ -50,12 +47,20 @@
     </v-toolbar>
     <v-jumbotron
       v-if="$route.path == '/'"
+      :gradient="gradientJumbotron"
       v-scroll="onScroll"
       dark >
       <v-container fill-height>
         <v-layout align-center>
           <v-flex text-xs-center>
-            <h3 class="display-3">Ready for being a Leader?</h3>
+            <h1 class="display-3">
+              The Future is Never Set;
+              <br> It is Ours to Create
+            </h1>
+            <h2 class="subtitle">
+              &mdash;
+            </h2>
+            <v-btn href="/artikel" color="error" large round depressed>Take Your First Move</v-btn>
           </v-flex>
         </v-layout>
       </v-container>
@@ -74,12 +79,12 @@ export default {
   data () {
     return {
       items: [
-        { icon: 'fa-backward', title: 'Recap 2017', to: '/' },
-        { icon: 'fa-youtube-play', title: 'View Full Video', to: 'https://www.youtube.com/watch?v=rbIo5dDwxX4', outlink: true }
+        { icon: 'fa-backward', title: 'Recap 2017', to: 'https://www.youtube.com/watch?v=rbIo5dDwxX4', outlink: true },
+        // { icon: 'fa-youtube-play', title: 'View Full Video', to: 'https://www.youtube.com/watch?v=rbIo5dDwxX4', outlink: true }
       ],
       navDrawer: false,
       scroll: 0,
-      gradient: 'to top right, rgba(63,81,181, .7), rgba(25,32,72, .7)'
+      gradientJumbotron: 'to right, #da22ff, #9733ee'
     }
   },
   computed: {
@@ -118,16 +123,11 @@ nav
 
 .jumbotron
   min-height 100vh
+  .display-3
+    @media only screen and (max-device-width: 960px)
+      font-size 40px !important
 
 .accent.transparent
   background-color #2c3e50cc !important
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  top: 0;
-  min-width: 100%;
-  min-height: 100%;
-  background-color: black;
-}
 </style>
