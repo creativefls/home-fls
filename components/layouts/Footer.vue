@@ -55,16 +55,28 @@
                   <div class="subheading">
                     Dapatkan Info Terbaru dari Kami
                   </div>
-                  <v-text-field
-                    name="input-1"
-                    label="First Name"></v-text-field>
-                  <v-text-field
-                    name="input-2"
-                    label="Last Name"></v-text-field>
+                  <v-layout>
+                    <v-flex class="pr-1">
+                      <v-text-field
+                        name="input-1"
+                        label="Nama Depan"></v-text-field>
+                    </v-flex>
+                    <v-flex class="pl-1">
+                      <v-text-field
+                        name="input-2"
+                        label="Nama Belakang"></v-text-field>
+                    </v-flex>
+                  </v-layout>
                   <v-text-field
                     name="input-3"
                     label="Email"></v-text-field>
-                  <v-btn color="primary" block depressed>Subscribe</v-btn>
+                  <v-text-field
+                    name="input-4"
+                    textarea
+                    rows="3"
+                    :counter="400"
+                    label="Pesan"></v-text-field>
+                  <v-btn color="primary" block round depressed>kirim</v-btn>
                 </v-card-text>
               </v-card>
             </v-flex>
@@ -77,6 +89,7 @@
     </v-card>
   </v-footer>
 </template>
+
 <script>
 export default {
   data: () => ({

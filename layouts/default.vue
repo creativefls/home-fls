@@ -30,14 +30,16 @@
       </nuxt-link>
       <v-spacer></v-spacer>
       <div class="align-center hidden-sm-and-down" style="margin-left: auto">
-        <v-btn outline round>
-          Recap 2017
-          <v-icon size="medium" class="ml-1">fa-backward</v-icon>
-        </v-btn>
-        <v-btn outline round href="https://www.youtube.com/watch?v=rbIo5dDwxX4">
-          View Full Video
-          <v-icon size="medium" class="ml-1">fa-youtube-play</v-icon>
-        </v-btn>
+        <template v-for="item in items" >
+          <v-btn v-if="item.outlink" outline round :href="item.to" :key="item.title">
+            {{ item.title }}
+            <v-icon size="medium" class="ml-1">{{ item.icon }}</v-icon>
+          </v-btn>
+          <v-btn v-else outline round :to="item.to" :key="item.title">
+            {{ item.title }}
+            <v-icon size="medium" class="ml-1">{{ item.icon }}</v-icon>
+          </v-btn>
+        </template>
       </div>
       <v-btn
         icon
@@ -72,8 +74,8 @@ export default {
   data () {
     return {
       items: [
-        { title: 'Welcome', to: '/' },
-        { title: 'Inspire', to: '/inspire' }
+        { icon: 'fa-backward', title: 'Recap 2017', to: '/' },
+        { icon: 'fa-youtube-play', title: 'View Full Video', to: 'https://www.youtube.com/watch?v=rbIo5dDwxX4', outlink: true }
       ],
       navDrawer: false,
       scroll: 0,
@@ -85,7 +87,7 @@ export default {
       if (this.scroll < 50 && this.$route.path == '/') {
         return 'transparent'
       } else {
-        return 'accent'
+        return 'accent transparent'
       }
     }
   },
@@ -102,7 +104,6 @@ export default {
 nav
   justify-content center
   padding 6px 0
-  opacity 0.8
   .toolbar__content
     @media only screen and (min-device-width: 960px)
       max-width 80%
@@ -114,10 +115,12 @@ nav
   .btn
     text-transform capitalize
     font-size 16px
-    font-weight 400
 
 .jumbotron
   min-height 100vh
+
+.accent.transparent
+  background-color #2c3e50cc !important
 
 #myVideo {
   position: fixed;
