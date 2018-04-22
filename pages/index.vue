@@ -41,7 +41,7 @@ export default {
             that.instaFeed = response.data.graphql.user.edge_owner_to_timeline_media.edges
           })
           .catch(function (error) {
-            console.log(error);
+            console.log('error fetch insta', error);
           });
     }
   },

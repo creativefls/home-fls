@@ -47,6 +47,7 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
+    '@/plugins/vee-validate',
     { src: '~plugins/ga.js', ssr: false }
   ],
 

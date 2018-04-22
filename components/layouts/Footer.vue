@@ -55,28 +55,42 @@
                   <div class="subheading">
                     Tinggalkan Pesan
                   </div>
-                  <v-layout wrap>
-                    <v-flex md6 class="px-1">
-                      <v-text-field
-                        name="input-1"
-                        label="Nama Depan"></v-text-field>
-                    </v-flex>
-                    <v-flex md6 class="px-1">
-                      <v-text-field
-                        name="input-2"
-                        label="Nama Belakang"></v-text-field>
-                    </v-flex>
-                  </v-layout>
                   <v-text-field
-                    name="input-3"
+                    v-model="guestFullName"
+                    :error-messages="errors.collect('fullName')"
+                    v-validate="'required'"
+                    data-vv-name="fullName"
+                    data-vv-as="Nama Lengkap"
+                    label="Nama lengkap"></v-text-field>
+                  <v-text-field
+                    v-model="guestNickName"
+                    :error-messages="errors.collect('nickName')"
+                    v-validate="'required'"
+                    data-vv-name="nickName"
+                    data-vv-as="Nama Panggilan"
+                    label="Nama Panggilan"></v-text-field>
+                  <v-text-field
+                    v-model="guestEmail"
+                    :error-messages="errors.collect('email')"
+                    v-validate="'required|email'"
+                    data-vv-name="email"
+                    data-vv-as="Email"
                     label="Email"></v-text-field>
                   <v-text-field
-                    name="input-4"
+                    v-model="guestMessage"
+                    :error-messages="errors.collect('message')"
+                    v-validate="'required'"
+                    data-vv-name="message"
+                    data-vv-as="Pesan"
                     textarea
                     rows="3"
                     :counter="400"
                     label="Pesan"></v-text-field>
-                  <v-btn color="primary" block round depressed>kirim</v-btn>
+                  <v-checkbox
+                    label="Berlangganan newsletter"
+                    v-model="checkboxNewsletter"
+                    ></v-checkbox>
+                  <v-btn color="primary" @click="submitMessage" block round depressed>kirim</v-btn>
                 </v-card-text>
               </v-card>
             </v-flex>
@@ -93,13 +107,39 @@
 <script>
 export default {
   data: () => ({
+    checkboxNewsletter: false,
+    guestFullName: '',
+    guestNickName: '',
+    guestEmail: '',
+    guestMessage: '',
     icons: [
       { name: 'fa-facebook', link: 'https://facebook.com/FutureLeaderSummit' },
       { name: 'fa-twitter', link: 'https://twitter.com/flsummit' },
       { name: 'fa-instagram', link: 'https://instagram.com/flsummit' },
       { name: 'fa-youtube-play', link: 'https://youtube.com/user/FLSummit' },
     ]
-  })
+  }),
+  methods: {
+    submitMessage () {
+      this.$validator.validateAll().then((result) => {
+        if(!result) {
+          alert('Input kurang !')
+        } else {
+          this.$axios.post('http://128.199.72.101:3001/api/messages', {
+            fullName: this.guestFullName,
+            email: this.guestEmail,
+            message: this.guestMessage,
+            isSubscribe: this.checkboxNewsletter,
+            nickName: this.guestNickName
+          }).then(response => {
+            console.log('sukses, ', response)
+          }).catch(error => {
+            console.log('error, ', error)
+          })
+        }
+      })
+    }
+  }
 }
 </script>
 
