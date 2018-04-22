@@ -105,6 +105,8 @@
 </template>
 
 <script>
+import swal from 'sweetalert2'
+
 export default {
   data: () => ({
     checkboxNewsletter: false,
@@ -123,7 +125,11 @@ export default {
     submitMessage () {
       this.$validator.validateAll().then((result) => {
         if(!result) {
-          alert('Input kurang !')
+          swal(
+            'Error',
+            'Sepertinya input yang kamu masukkan ada kekurangan. Silakan dicek kembali ya',
+            'error'
+          )
         } else {
           this.$axios.post('http://128.199.72.101:3001/api/messages', {
             fullName: this.guestFullName,
@@ -132,8 +138,18 @@ export default {
             isSubscribe: this.checkboxNewsletter,
             nickName: this.guestNickName
           }).then(response => {
+            swal(
+              'Success',
+              'Pesan berhasil kami terima. Jika menghendaki pesan interaktif, kamu bisa menghubungi contact person yang tersedia. Terima kasih ^_^',
+              'success'
+            )
             console.log('sukses, ', response)
           }).catch(error => {
+            swal(
+              'Error',
+              'Sistem error',
+              'error'
+            )
             console.log('error, ', error)
           })
         }
