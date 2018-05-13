@@ -1,16 +1,5 @@
 <template>
   <v-container fluid>
-    <v-container>
-      <div class="display-1 text-xs-center follow">Ikuti kami</div>
-      <v-layout justify-center wrap>
-        <v-flex xs4 class="pa-1"  v-for="(insta, index) in instaFeed" :key="insta.id" v-if="index < 9">
-          <a href="https://www.instagram.com/flsummit/">
-            <img class="image" :src="insta.node.thumbnail_src" alt="flsummit" width="100%" height="100%">
-          </a>
-        </v-flex>
-      </v-layout>
-
-    </v-container>
     <v-layout class="section-insta success" wrap justify-center>
       <v-flex align-content-center="" md6 class="pb-5">
         <v-card flat dark color="transparent">
@@ -24,29 +13,14 @@
 </template>
 
 <script>
-import FlsQuote from '~/components/sections/QuoteHome'
-
 export default {
-  components: { FlsQuote },
   data () {
     return {
-      instaFeed: []
     }
   },
   methods: {
-    getDataInsta () {
-       var that = this // this di dalam then tidak bisa bekerja
-        this.$axios.get('https://www.instagram.com/flsummit/?__a=1')
-          .then(function (response) {
-            that.instaFeed = response.data.graphql.user.edge_owner_to_timeline_media.edges
-          })
-          .catch(function (error) {
-            console.log('error fetch insta', error);
-          });
-    }
   },
   created () {
-    this.getDataInsta()
   }
 }
 </script>
