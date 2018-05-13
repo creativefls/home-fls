@@ -44,7 +44,7 @@
               </v-btn>
             </v-flex>
             <v-flex class="pa-3" md4>
-              <p class="subheading">TENTANG</p>
+              <p class="subheading">TENTANG KAMI</p>
               <div>
                 Future Leader Summit (FLS) merupakan konferensi nasional pemuda tahunan yang digagas oleh Nusantara Muda sejak 2011.
               </div>
@@ -87,7 +87,7 @@
                     :counter="400"
                     label="Pesan"></v-text-field>
                   <v-checkbox
-                    label="Berlangganan newsletter"
+                    label="Kabari melalui email"
                     v-model="checkboxNewsletter"
                     ></v-checkbox>
                   <v-btn color="primary" @click="submitMessage" block round depressed>kirim</v-btn>
