@@ -1,6 +1,6 @@
 <template>
-  <v-container grid-list-md>
-    <h1 class="headline text-xs-center py-4">Artikel</h1>
+  <v-container v-show="title" grid-list-md>
+    <h1 class="headline text-xs-center py-4">{{ title }}</h1>
     <v-layout wrap>
       <v-flex md4 v-for="(post, index) in posts" :key="post.id">
         <v-card>
@@ -30,6 +30,7 @@
 export default {
   data () {
     return {
+      title: null,
       posts: [],
       thumbnail: []
     }
@@ -45,6 +46,7 @@ export default {
         this.posts.forEach(async (post) => {
           await this.getThumbnail(post.featured_media)
         })
+        this.title = 'Arikel'
       }).catch(error => {
         console.log(error.message);
       })
