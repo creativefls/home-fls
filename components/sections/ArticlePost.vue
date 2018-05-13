@@ -46,7 +46,7 @@ export default {
         this.posts.forEach(async (post) => {
           await this.getThumbnail(post.featured_media)
         })
-        this.title = 'Arikel'
+        this.title = 'Artikel'
       }).catch(error => {
         console.log(error.message);
       })
