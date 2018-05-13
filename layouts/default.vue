@@ -54,18 +54,18 @@
         <v-layout align-center>
           <v-flex text-xs-center>
             <h1 class="display-3">
-              The Future is Never Set;
-              <br> It is Ours to Create
+              Something cool is coming;
+              <br> Lead to Inspire Story
             </h1>
             <h2 class="subtitle">
-              &mdash;
+              <small>This time we'll hear story from</small> Surabaya
             </h2>
-            <v-btn href="/artikel" color="error" large round depressed>Take Your First Move</v-btn>
+            <v-btn href="/inspire" color="error" large round depressed>Daftar Sekarang</v-btn>
           </v-flex>
         </v-layout>
       </v-container>
     </v-jumbotron>
-    <v-content :class="$route.path == '/' ? 'pt-0' : ''">
+    <v-content :class="$route.path == '/' ? 'pt-0' : 'padding-page'">
       <nuxt />
     </v-content>
     <layout-footer></layout-footer>
@@ -130,4 +130,6 @@ nav
 .accent.transparent
   background-color #2c3e50cc !important
 
+.padding-page
+  padding-top 0 !important
 </style>
