@@ -1,5 +1,6 @@
 <template>
   <v-container fluid>
+    <article-post />
     <v-layout class="section-insta success" wrap justify-center>
       <v-flex align-content-center="" md6 class="pb-5">
         <v-card flat dark color="transparent">
@@ -13,7 +14,10 @@
 </template>
 
 <script>
+import ArticlePost from '@/components/sections/ArticlePost'
+
 export default {
+  components: { ArticlePost },
   data () {
     return {
     }

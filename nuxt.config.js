@@ -48,6 +48,7 @@ module.exports = {
   plugins: [
     '@/plugins/vuetify',
     '@/plugins/vee-validate',
+    '@/plugins/moment',
     { src: '~plugins/ga.js', ssr: false }
   ],
 
