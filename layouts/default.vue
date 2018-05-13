@@ -48,6 +48,7 @@
     <v-jumbotron
       v-if="$route.path == '/'"
       :gradient="gradientJumbotron"
+      :src="imageJumbotron"
       v-scroll="onScroll"
       dark >
       <v-container fill-height>
@@ -84,7 +85,8 @@ export default {
       ],
       navDrawer: false,
       scroll: 0,
-      gradientJumbotron: 'to right, #da22ff, #9733ee'
+      gradientJumbotron: 'to right, #da22ff99, #9733ee99',
+      imageJumbotron: '/images/surabaya.jpg'
     }
   },
   computed: {
