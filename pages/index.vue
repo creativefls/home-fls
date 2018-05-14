@@ -1,5 +1,66 @@
 <template>
   <v-container fluid>
+    <v-layout row wrap>
+      <v-flex>
+        <v-card>
+          <v-container fluid grid-list-md>
+            <v-layout row wrap>
+              <v-flex
+                v-for="card in cards"
+                v-bind="{ [`xs${card.flex}`]: true }"
+                :key="card.title"
+              >
+                <v-card 
+                @click.native.stop="dialog = true"
+                style="cursor:pointer">
+                  <v-card-media
+                    :src="card.src"
+                    height="250px"
+                  >
+                    <v-container fill-height fluid>
+                      <v-layout fill-height>
+                        <v-flex xs12 align-end flexbox>
+                          <center>
+                            <span>
+                              <v-icon class="playIcon" style="margin-top:25px" size="200px">play_circle_outline</v-icon>
+                            </span>
+                            <v-dialog v-model="dialog" max-width="455px">
+                              <v-card>
+                                <iframe 
+                                width="455" 
+                                height="315" 
+                                :src="card.embeed" 
+                                frameborder="0" 
+                                allow="autoplay; 
+                                encrypted-media" 
+                                allowfullscreen
+                                ></iframe>
+                                <v-card-actions>
+                                  <v-spacer></v-spacer>
+                                  <v-btn color="error">
+                                    <v-icon>close</v-icon>
+                                  </v-btn>
+                                </v-card-actions>
+                              </v-card>
+                            </v-dialog>
+                          </center>
+                        </v-flex>
+                      </v-layout>
+                    </v-container>
+                  </v-card-media>
+
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <h3 v-text="card.title"></h3>
+                </v-card-actions>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-card>
+      </v-flex>
+    </v-layout>
+
     <v-container>
       <div class="display-1 text-xs-center follow">Ikuti kami</div>
       <v-layout justify-center wrap>
@@ -30,7 +91,13 @@ export default {
   components: { FlsQuote },
   data () {
     return {
-      instaFeed: []
+      instaFeed: [],
+      dialog: false,
+      cards: [
+        { title: 'Lead to Inspire Story - The Art of Digital Marketing Part 2', src: 'https://img.youtube.com/vi/mwiLzPvkUNE/hqdefault.jpg', flex: 4, embeed: 'https://www.youtube.com/embed/v_Lq3eD1RUs'},
+        { title: 'Lead to Inspire Story 1 - Design Thinking Part 1', src: 'https://img.youtube.com/vi/7VHrwaL2eeI/hqdefault.jpg', flex: 4, embeed: 'https://www.youtube.com/embed/-45lW-RHumA' },
+        { title: 'After Movie Future Leader Summit 2017', src: 'https://img.youtube.com/vi/rbIo5dDwxX4/hqdefault.jpg', flex: 4, embeed: 'https://www.youtube.com/embed/rbIo5dDwxX4' },
+      ]
     }
   },
   methods: {
@@ -67,4 +134,9 @@ img.line-barcode {
 .card > *
   display block
   margin 0 auto
+
+.playIcon
+  color white
+.playIcon:hover
+  color red
 </style>
