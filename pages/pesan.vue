@@ -43,7 +43,7 @@
               label="Kabari melalui email"
               v-model="checkboxNewsletter"
               ></v-checkbox>
-            <v-btn color="primary" @click="submitMessage" block round depressed>kirim</v-btn>
+            <v-btn color="primary" @click="validateSubmitMessage" block round depressed>kirim</v-btn>
           </v-card-text>
         </v-card>
       </v-flex>
@@ -74,7 +74,7 @@ export default {
     }
   },
   methods: {
-    submitMessage () {
+    validateSubmitMessage () {
       this.$validator.validateAll().then((result) => {
         if(!result) {
           swal(
@@ -83,32 +83,36 @@ export default {
             'error'
           )
         } else {
-          this.$axios.post('http://localhost:3001/api/messages', {
-          // this.$axios.post('http://128.199.72.101:3001/api/messages', {
-            fullName: this.guestFullName,
-            email: this.guestEmail,
-            message: this.guestMessage,
-            isSubscribe: this.checkboxNewsletter,
-            nickName: this.guestNickName,
-            topic: this.topic
-          }).then(response => {
-            swal(
-              'Success',
-              'Pesan berhasil kami terima. Jika menghendaki pesan interaktif, kamu bisa menghubungi contact person yang tersedia. Terima kasih ^_^',
-              'success'
-            )
-            console.log('sukses, ', response)
-          }).catch(error => {
-            swal(
-              'Error',
-              'Sistem error',
-              'error'
-            )
-            console.log('error, ', error)
-          })
+          this.submitMessage()
         }
       })
+    },
+    submitMessage () {
+      this.$axios.post('http://localhost:3001/api/messages', {
+      // this.$axios.post('http://128.199.72.101:3001/api/messages', {
+        fullName: this.guestFullName,
+        email: this.guestEmail,
+        message: this.guestMessage,
+        isSubscribe: this.checkboxNewsletter,
+        nickName: this.guestNickName,
+        topic: this.topic
+      }).then(response => {
+        swal('Success', 'Pesan berhasil kami terima. Jika menghendaki pesan interaktif, kamu bisa menghubungi contact person yang tersedia. Terima kasih ^_^', 'success' )
+        console.log('sukses, ', response)
+      }).catch(error => {
+        swal('Error', error.message, 'error' )
+        console.log('error, ', error)
+      })
     }
+  },
+  created () {
+    let query = this.$route.query
+    if (query.fullName) this.guestFullName = query.fullName
+    if (query.nickName) this.guestNickName = query.nickName
+    if (query.email) this.guestEmail = query.email
+    if (query.topic) this.topic = query.topic
+    if (query.customTitle) this.customTitle = query.customTitle
+
   }
 }
 </script>
