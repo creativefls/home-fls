@@ -88,8 +88,7 @@ export default {
       })
     },
     submitMessage () {
-      this.$axios.post('http://localhost:3001/api/messages', {
-      // this.$axios.post('http://128.199.72.101:3001/api/messages', {
+      this.$axios.post('http://128.199.72.101:3001/api/messages', {
         fullName: this.guestFullName,
         email: this.guestEmail,
         message: this.guestMessage,
