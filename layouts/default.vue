@@ -59,9 +59,9 @@
               <br> Lead to Inspire Story
             </h1>
             <h2 class="subtitle">
-              <small>Tunggu roadshow berikutnya di</small> Jakarta!
+              <small>This time we'll hear story from</small> Jakarta
             </h2>
-            <!-- <v-btn href="/inspire" color="error" large round depressed>Daftar Sekarang</v-btn> -->
+            <v-btn href="/inspire" color="error" large round depressed>Daftar Sekarang</v-btn>
           </v-flex>
         </v-layout>
       </v-container>
