@@ -130,8 +130,8 @@ nav
       font-size 40px !important
 
 .accent.transparent
-  background-color #2c3e50cc !important
+  background-color #2c3e50 !important
 
 .padding-page
-  padding-top 0 !important
+  padding-top 60px !important
 </style>
