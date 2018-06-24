@@ -86,7 +86,7 @@ export default {
       navDrawer: false,
       scroll: 0,
       gradientJumbotron: 'to right, #da22ff99, #9733ee99',
-      imageJumbotron: '/images/surabaya.jpg'
+      imageJumbotron: '/images/background-monas.jpg'
     }
   },
   computed: {
