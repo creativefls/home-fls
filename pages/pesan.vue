@@ -28,7 +28,6 @@
               data-vv-name="email"
               data-vv-as="Email"
               label="Email"></v-text-field>
-            <v-text-field v-model="topic"></v-text-field>
             <v-text-field
               v-model="guestMessage"
               :error-messages="errors.collect('message')"
