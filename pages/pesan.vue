@@ -28,6 +28,7 @@
               data-vv-name="email"
               data-vv-as="Email"
               label="Email"></v-text-field>
+            <v-text-field v-model="topic"></v-text-field>
             <v-text-field
               v-model="guestMessage"
               :error-messages="errors.collect('message')"
@@ -64,7 +65,7 @@ export default {
       guestNickName: '',
       guestEmail: '',
       guestMessage: '',
-      topic: 'general'
+      topic: ''
     }
   },
   computed: {
@@ -111,9 +112,14 @@ export default {
     if (query.fullName) this.guestFullName = query.fullName
     if (query.nickName) this.guestNickName = query.nickName
     if (query.email) this.guestEmail = query.email
-    if (query.topic) this.topic = query.topic
     if (query.customTitle) this.customTitle = query.customTitle
-
+    this.$nextTick(() => {
+      if (query.topic) {
+        this.topic = query.topic
+      } else {
+        this.topic = 'general'
+      }
+    })
   }
 }
 </script>
