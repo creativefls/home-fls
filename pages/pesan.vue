@@ -64,7 +64,7 @@ export default {
       guestNickName: '',
       guestEmail: '',
       guestMessage: '',
-      topic: 'general'
+      topic: ''
     }
   },
   computed: {
@@ -96,7 +96,9 @@ export default {
         nickName: this.guestNickName,
         topic: this.topic
       }).then(response => {
-        swal('Success', 'Pesan berhasil kami terima. Jika menghendaki pesan interaktif, kamu bisa menghubungi contact person yang tersedia. Terima kasih ^_^', 'success' )
+        swal('Success', 'Pesan berhasil kami terima. Jika menghendaki pesan interaktif, kamu bisa menghubungi contact person yang tersedia. Terima kasih ^_^', 'success' ).then(result => {
+          if(result.value) window.location.href = '/pesan'
+        })
         console.log('sukses, ', response)
       }).catch(error => {
         swal('Error', error.message, 'error' )
@@ -109,9 +111,14 @@ export default {
     if (query.fullName) this.guestFullName = query.fullName
     if (query.nickName) this.guestNickName = query.nickName
     if (query.email) this.guestEmail = query.email
-    if (query.topic) this.topic = query.topic
     if (query.customTitle) this.customTitle = query.customTitle
-
+    this.$nextTick(() => {
+      if (query.topic) {
+        this.topic = query.topic
+      } else {
+        this.topic = 'general'
+      }
+    })
   }
 }
 </script>
