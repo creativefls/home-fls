@@ -11,6 +11,12 @@ Vue.use(Vuetify, {
     success: '#2ecc71',
     warning: '#f1c40f',
     cloud: '#ecf0f1',
-    silver: '#bdc3c7'
+    silver: '#bdc3c7',
+    urban: '#27AE60',
+    edu: '#E74C3C',
+    creative: '#F1C40F',
+    digital: '#2980B9',
+    sci: '#9B59B6',
+    tourism: '#AF603E'
   }
 })
