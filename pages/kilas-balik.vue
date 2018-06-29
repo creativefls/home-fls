@@ -280,6 +280,7 @@
           </v-layout>
         </v-card-actions>
       </v-card>
+      <br class="my-4">
     </v-flex>
   </v-layout>
 </template>
