@@ -1,11 +1,44 @@
 <template>
-  <v-layout class="fullheight">
-    <countdown v-show="showCountdown" :time="eventTime * 1000">
-      <template slot-scope="props">
-        Time Remaining：{{ props.days }} days, {{ props.hours }} hours, {{ props.minutes }} minutes, {{ props.seconds }} seconds.
-      </template>
-    </countdown>
-  <v-btn @click="showCountdown = !showCountdown">klik</v-btn>
+  <v-layout class="fullheight my-4 py-4" align-end>
+    <v-flex text-xs-center>
+      <div class="py-4"></div>
+      <div class="py-4"></div>
+      <h1 class="display-3 info--text font-weight-medium">
+        Menuju Future Leader Summit 2018
+      </h1>
+      <br class="my-4">
+      <v-layout align-center justify-center>
+        <v-flex md6>
+          <countdown v-show="showCountdown" :time="eventTime * 1000">
+            <template slot-scope="props">
+              <v-layout class="success--text">
+                <v-flex xs3 class="display-3"> {{ props.days }} </v-flex>
+                <v-flex xs3 class="display-3"> {{ props.hours }} </v-flex>
+                <v-flex xs3 class="display-3"> {{ props.minutes }} </v-flex>
+                <v-flex xs3 class="display-3"> {{ props.seconds }} </v-flex>
+              </v-layout>
+              <v-layout class="info--text">
+                <v-flex xs3 class="headline"> Hari </v-flex>
+                <v-flex xs3 class="headline"> Jam </v-flex>
+                <v-flex xs3 class="headline"> Menit </v-flex>
+                <v-flex xs3 class="headline"> Detik </v-flex>
+              </v-layout>
+            </template>
+          </countdown>
+          <v-btn @click="showCountdown = !showCountdown">klik</v-btn>
+        </v-flex>
+      </v-layout>
+      <br class="my-4">
+      <v-layout align-center class="py-4 my-4">
+        <v-flex md6>
+          <img src="/images/tagline.png" alt="" width="100%" height="100%">
+        </v-flex>
+        <v-flex md6>
+          <div class="display-1 pb-4 gold--text"> Preparing The Future Leaders for Taking Charge in the Disruption Era.</div>
+        </v-flex>
+      </v-layout>
+      <div class="py-4"></div>
+    </v-flex>
   </v-layout>
 </template>
 
@@ -14,7 +47,7 @@ export default {
   data () {
     return {
       eventTime: 0,
-      showCountdown: false
+      showCountdown: true
     }
   },
   created () {
