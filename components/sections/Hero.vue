@@ -11,7 +11,7 @@
           FLS bertujuan untuk mempersiapkan pemimpin-pemimpin muda dari seluruh Indonesia dalam membuat perubahan signifikan untuk Indonesia yang lebih baik.
         </small>
       </h2>
-      <v-btn href="/inspire" color="info" large round depressed>Daftar Sekarang</v-btn>
+      <v-btn href="/daftar" color="info" large round depressed>Daftar Sekarang</v-btn>
     </v-flex>
   </v-layout>
 </template>
