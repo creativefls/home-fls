@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
+    "@xkeshi/vue-countdown": "^1.0.0",
     "nuxt": "^1.0.0",
     "sweetalert2": "^7.19.1",
     "vee-validate": "^2.0.6",
