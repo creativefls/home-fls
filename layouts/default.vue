@@ -18,22 +18,32 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar :color="toolbarColor" class="d-flex" scroll-off-screen dense flat dark app>
-      <nuxt-link to="/">
+      <nuxt-link to="/" class="hidden-md-and-up">
         <v-toolbar-title>
           <v-avatar tile>
             <img src="https://user-images.githubusercontent.com/21119252/34459239-16407fee-ee1d-11e7-94c1-dc6446f962b0.png" alt="FLS Logo">
           </v-avatar>
         </v-toolbar-title>
       </nuxt-link>
-      <v-spacer></v-spacer>
+      <v-spacer class="hidden-md-and-up"></v-spacer>
       <v-toolbar-items class="align-center hidden-sm-and-down" style="margin-left: auto">
-        <template v-for="item in items" >
+        <!-- <nuxt-link to="/">
+          <v-avatar tile>
+            <img src="https://user-images.githubusercontent.com/21119252/34459239-16407fee-ee1d-11e7-94c1-dc6446f962b0.png" alt="FLS Logo">
+          </v-avatar>
+        </nuxt-link> -->
+        <template v-for="(item, i ) in items" >
           <v-btn v-if="item.outlink" flat :href="item.to" :key="item.title">
             {{ item.title }}
           </v-btn>
           <v-btn v-else flat :to="item.to" :key="item.title">
             {{ item.title }}
           </v-btn>
+          <nuxt-link :key="i" v-if="i+1 == (items.length/2)" to="/">
+            <v-avatar tile>
+              <img src="https://user-images.githubusercontent.com/21119252/34459239-16407fee-ee1d-11e7-94c1-dc6446f962b0.png" alt="FLS Logo">
+            </v-avatar>
+          </nuxt-link>
         </template>
       </v-toolbar-items>
       <v-btn
@@ -50,16 +60,19 @@
       v-scroll="onScroll"
       dark >
       <v-container fill-height>
-        <v-layout align-center>
-          <v-flex text-xs-center>
+        <v-layout align-center justify-center>
+          <v-flex md10 text-xs-center>
             <h1 class="display-3">
-              Something cool is coming;
-              <br> Lead to Inspire Story
+              Future Leader Summit 2018
             </h1>
             <h2 class="subtitle">
-              <small>This time we'll hear story from</small> Jakarta
+              <small>
+                Konferensi kepemudaan berskala nasional sebagai platform  kolaborasi yang digagas oleh Nusantara Muda.
+                <br>
+                 FLS bertujuan untuk mempersiapkan pemimpin-pemimpin muda dari seluruh Indonesia dalam membuat perubahan signifikan untuk Indonesia yang lebih baik.
+              </small>
             </h2>
-            <v-btn href="/inspire" color="error" large round depressed>Daftar Sekarang</v-btn>
+            <v-btn href="/inspire" color="info" large round depressed>Daftar Sekarang</v-btn>
           </v-flex>
         </v-layout>
       </v-container>
@@ -78,13 +91,15 @@ export default {
   data () {
     return {
       items: [
+        { title: 'Rooms', to: '/kilas-balik', outlink: false },
         { title: 'Kilas Balik', to: '/kilas-balik', outlink: false },
-        { title: 'Artikel', to: '/artikel', outlink: false }
+        { title: 'Galeri', to: '/galeri', outlink: false },
+        { title: 'Sponsorship', to: '/artikel', outlink: false }
       ],
       navDrawer: false,
       scroll: 0,
-      gradientJumbotron: 'to right, #da22ff99, #9733ee99',
-      imageJumbotron: '/images/background-monas.jpg'
+      gradientJumbotron: '',
+      imageJumbotron: '/images/background-unyu.png'
     }
   },
   computed: {
@@ -114,9 +129,9 @@ nav
       max-width 80%
   .toolbar__title
     margin-left 0
-    .avatar.avatar--tile
-      height 36px !important
-      width auto !important
+  .avatar.avatar--tile
+    height 36px !important
+    width auto !important
   .btn
     text-transform capitalize
     font-size 16px
