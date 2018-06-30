@@ -15,17 +15,17 @@
                   <v-layout row>
                     <v-flex xs7>
                       <div>
-                        <div class="headline grey">11 Mei 2011</div>                        
+                        <div class="headline grey">11 Mei 2011</div>
                         <div class="headline"><b>"We are not talking about change, We are making change."</b></div><br>
                         <div>
-                          <b class="txt-urban">1</b> Hari 
-                          <b class="txt-urban">6</b> Isu 
+                          <b class="txt-urban">1</b> Hari
+                          <b class="txt-urban">6</b> Isu
                           <b class="txt-urban">14</b> Pembicara
                         </div>
                         <div>
-                          <b class="txt-urban">224</b> Peserta 
+                          <b class="txt-urban">224</b> Peserta
                           <b class="txt-urban">517</b> Pendaftar
-                        </div>                        
+                        </div>
                       </div>
                     </v-flex>
                     <v-flex xs5>
@@ -52,17 +52,17 @@
                   <v-layout row>
                     <v-flex xs7>
                       <div>
-                        <div class="headline grey">12 Mei 2012</div>                        
+                        <div class="headline grey">12 Mei 2012</div>
                         <div class="headline"><b>"Empowering Nation’s Future Leader"</b></div><br>
                         <div>
-                          <b class="txt-edu">1</b> Hari 
-                          <b class="txt-edu">6</b> Isu 
+                          <b class="txt-edu">1</b> Hari
+                          <b class="txt-edu">6</b> Isu
                           <b class="txt-edu">13</b> Pembicara
                         </div>
                         <div>
-                          <b class="txt-edu">350</b> Peserta 
+                          <b class="txt-edu">350</b> Peserta
                           <b class="txt-edu">587</b> Pendaftar
-                        </div>                        
+                        </div>
                       </div>
                     </v-flex>
                     <v-flex xs5>
@@ -89,17 +89,17 @@
                   <v-layout row>
                     <v-flex xs7>
                       <div>
-                        <div class="headline grey">18 - 19 Mei 2013</div>                        
+                        <div class="headline grey">18 - 19 Mei 2013</div>
                         <div class="headline"><b>"Integrating Youth Action for Nation"</b></div><br>
                         <div>
-                          <b class="txt-creative">2</b> Hari 
-                          <b class="txt-creative">6</b> Isu 
+                          <b class="txt-creative">2</b> Hari
+                          <b class="txt-creative">6</b> Isu
                           <b class="txt-creative">14</b> Pembicara
                         </div>
                         <div>
-                          <b class="txt-creative">300</b> Peserta 
+                          <b class="txt-creative">300</b> Peserta
                           <b class="txt-creative">673</b> Pendaftar
-                        </div>                        
+                        </div>
                       </div>
                     </v-flex>
                     <v-flex xs5>
@@ -126,17 +126,17 @@
                   <v-layout row>
                     <v-flex xs7>
                       <div>
-                        <div class="headline grey">16 - 18 Mei 2014</div>                        
+                        <div class="headline grey">16 - 18 Mei 2014</div>
                         <div class="headline"><b>"Youth Contributing for Nation"</b></div><br>
                         <div>
-                          <b class="txt-digital">3</b> Hari 
-                          <b class="txt-digital">6</b> Isu 
+                          <b class="txt-digital">3</b> Hari
+                          <b class="txt-digital">6</b> Isu
                           <b class="txt-digital">14</b> Pembicara
                         </div>
                         <div>
-                          <b class="txt-digital">240</b> Peserta 
+                          <b class="txt-digital">240</b> Peserta
                           <b class="txt-digital">1200</b> Pendaftar
-                        </div>                        
+                        </div>
                       </div>
                     </v-flex>
                     <v-flex xs5>
@@ -163,17 +163,17 @@
                   <v-layout row>
                     <v-flex xs7>
                       <div>
-                        <div class="headline grey">19 - 20 September 2015</div>                        
+                        <div class="headline grey">19 - 20 September 2015</div>
                         <div class="headline"><b>"Berani Beraksi"</b></div><br>
                         <div>
-                          <b class="txt-sci">2</b> Hari 
-                          <b class="txt-sci">6</b> Isu 
+                          <b class="txt-sci">2</b> Hari
+                          <b class="txt-sci">6</b> Isu
                           <b class="txt-sci">14</b> Pembicara
                         </div>
                         <div>
-                          <b class="txt-sci">240</b> Peserta 
+                          <b class="txt-sci">240</b> Peserta
                           <b class="txt-sci">1200</b> Pendaftar
-                        </div>                        
+                        </div>
                       </div>
                     </v-flex>
                     <v-flex xs5>
@@ -200,17 +200,17 @@
                   <v-layout row>
                     <v-flex xs7>
                       <div>
-                        <div class="headline grey">1 - 2  Oktober 2016</div>                        
+                        <div class="headline grey">1 - 2  Oktober 2016</div>
                         <div class="headline"><b>"Collaborating Young Leaders to Face Bonus Demographic 2020"</b></div><br>
                         <div>
-                          <b class="txt-tourism">2</b> Hari 
-                          <b class="txt-tourism">6</b> Isu 
+                          <b class="txt-tourism">2</b> Hari
+                          <b class="txt-tourism">6</b> Isu
                           <b class="txt-tourism">14</b> Pembicara
                         </div>
                         <div>
-                          <b class="txt-tourism">240</b> Peserta 
+                          <b class="txt-tourism">240</b> Peserta
                           <b class="txt-tourism">1504</b> Pendaftar
-                        </div>                        
+                        </div>
                       </div>
                     </v-flex>
                     <v-flex xs5>
@@ -237,17 +237,17 @@
                   <v-layout row>
                     <v-flex xs7>
                       <div>
-                        <div class="headline grey">11 Mei 2011</div>                        
+                        <div class="headline grey">9 September 2017</div>
                         <div class="headline"><b>"Dare to Create"</b></div><br>
                         <div>
-                          <b class="txt-secondary">1</b> Hari 
-                          <b class="txt-secondary">6</b> Isu 
-                          <b class="txt-secondary">13</b> Pembicara
+                          <b class="txt-secondary">2</b> Hari
+                          <b class="txt-secondary">6</b> Isu
+                          <b class="txt-secondary">15</b> Pembicara
                         </div>
                         <div>
-                          <b class="txt-secondary">224</b> Peserta 
-                          <b class="txt-secondary">517</b> Pendaftar
-                        </div>                        
+                          <b class="txt-secondary">240</b> Peserta
+                          <b class="txt-secondary">25.512</b> Pendaftar
+                        </div>
                       </div>
                     </v-flex>
                     <v-flex xs5>
@@ -308,11 +308,11 @@ export default {
   .txt-edu{
     color: #E74C3C;
   }
-  
+
   .txt-creative{
     color: #F1C40F;
   }
-  
+
   .txt-digital{
     color: #2980B9;
   }
