@@ -53,31 +53,8 @@
         <v-icon>menu</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-jumbotron
-      v-if="$route.path == '/'"
-      :gradient="gradientJumbotron"
-      :src="imageJumbotron"
-      v-scroll="onScroll"
-      dark >
-      <v-container fill-height>
-        <v-layout align-center justify-center>
-          <v-flex md10 text-xs-center>
-            <h1 class="display-3">
-              Future Leader Summit 2018
-            </h1>
-            <h2 class="subtitle mb-3">
-              <small>
-                Konferensi kepemudaan berskala nasional sebagai platform  kolaborasi yang digagas oleh Nusantara Muda.
-                <br>
-                 FLS bertujuan untuk mempersiapkan pemimpin-pemimpin muda dari seluruh Indonesia dalam membuat perubahan signifikan untuk Indonesia yang lebih baik.
-              </small>
-            </h2>
-            <v-btn href="/inspire" color="info" large round depressed>Daftar Sekarang</v-btn>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-jumbotron>
-    <v-content :class="$route.path == '/' ? 'pt-0' : 'padding-page'">
+
+    <v-content :class="$route.path == '/' ? 'pt-0' : 'padding-page'" v-scroll="onScroll">
       <nuxt />
     </v-content>
     <layout-footer></layout-footer>
@@ -97,9 +74,7 @@ export default {
         { title: 'Sponsorship', to: '/artikel', outlink: false }
       ],
       navDrawer: false,
-      scroll: 0,
-      gradientJumbotron: '',
-      imageJumbotron: '/images/background-unyu.png'
+      scroll: 0
     }
   },
   computed: {
