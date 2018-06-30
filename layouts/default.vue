@@ -68,10 +68,10 @@ export default {
   data () {
     return {
       items: [
-        { title: 'Rooms', to: '/kilas-balik', outlink: false },
+        { title: 'Program', to: '/program', outlink: false },
+        { title: 'Galeri', to: '/2017/galeri', outlink: false },
         { title: 'Kilas Balik', to: '/kilas-balik', outlink: false },
-        { title: 'Galeri', to: '/galeri', outlink: false },
-        { title: 'Sponsorship', to: '/artikel', outlink: false }
+        { title: 'Artikel', to: '/artikel', outlink: false }
       ],
       navDrawer: false,
       scroll: 0

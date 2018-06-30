@@ -49,7 +49,7 @@ export default {
   data () {
     return {
       eventTime: 0,
-      showCountdown: true
+      showCountdown: false
     }
   },
   created () {
