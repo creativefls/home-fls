@@ -1,5 +1,12 @@
 <template>
   <v-container fluid>
+    <countdown v-show="showCountdown" :time="eventTime * 1000">
+      <template slot-scope="props">
+        Time Remaining：{{ props.days }} days, {{ props.hours }} hours, {{ props.minutes }} minutes, {{ props.seconds }} seconds.
+      </template>
+    </countdown>
+    <hr>
+    <v-btn @click="showCountdown = !showCountdown">klik</v-btn>
     <article-post />
     <v-layout class="section-insta success" wrap justify-center>
       <v-flex align-content-center="" md6 class="pb-5">
@@ -20,11 +27,16 @@ export default {
   components: { ArticlePost },
   data () {
     return {
+      eventTime: 0,
+      showCountdown: false
     }
   },
   methods: {
   },
   created () {
+    this.$nextTick(() => {
+      this.eventTime = this.$moment('2018-07-01 12:00:00').unix() - this.$moment().unix()
+    })
   }
 }
 </script>
