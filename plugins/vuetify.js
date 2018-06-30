@@ -10,6 +10,7 @@ Vue.use(Vuetify, {
     info: '#3883c7',
     success: '#18bc97',
     warning: '#feb34d',
+    gold: '#C17B01',
     cloud: '#ecf0f1',
     silver: '#bdc3c7',
     urban: '#27AE60',
