@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <div style="background: url('/images/background-unyu.png') top center / contain no-repeat">
+    <div style="background: url('/images/background-unyu.png') top center no-repeat; background-size: 100%;">
       <fls-hero></fls-hero>
       <fls-countdown></fls-countdown>
     </div>
