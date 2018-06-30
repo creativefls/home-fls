@@ -17,7 +17,7 @@
     "sweetalert2": "^7.19.1",
     "vee-validate": "^2.0.6",
     "vue-moment": "^3.2.0",
-    "vuetify": "^1.0.10"
+    "vuetify": "^1.1.0"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",

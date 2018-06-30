@@ -104,18 +104,12 @@ nav
       max-width 80%
   .toolbar__title
     margin-left 0
-  .avatar.avatar--tile
+  .v-avatar--tile
     height 36px !important
     width auto !important
   .btn
     text-transform capitalize
     font-size 16px
-
-.jumbotron
-  min-height 100vh
-  .display-3
-    @media only screen and (max-device-width: 960px)
-      font-size 40px !important
 
 .accent.transparent
   background-color #2c3e50 !important
