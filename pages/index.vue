@@ -2,14 +2,7 @@
   <v-container fluid>
     <div style="background: url('/images/background-unyu.png') top center / contain no-repeat">
       <fls-hero></fls-hero>
-      <v-layout class="fullheight">
-        <countdown v-show="showCountdown" :time="eventTime * 1000">
-          <template slot-scope="props">
-            Time Remaining：{{ props.days }} days, {{ props.hours }} hours, {{ props.minutes }} minutes, {{ props.seconds }} seconds.
-          </template>
-        </countdown>
-      <v-btn @click="showCountdown = !showCountdown">klik</v-btn>
-      </v-layout>
+      <fls-countdown></fls-countdown>
     </div>
     <article-post />
     <v-layout class="section-insta success" wrap justify-center>
@@ -26,25 +19,19 @@
 
 <script>
 import FlsHero from '@/components/sections/Hero'
+import FlsCountdown from '@/components/sections/Countdown'
 import ArticlePost from '@/components/sections/ArticlePost'
 
 export default {
-  components: { ArticlePost, FlsHero },
+  components: { ArticlePost, FlsHero, FlsCountdown },
   data () {
     return {
-      eventTime: 0,
-      showCountdown: false
     }
   },
   computed: {
   },
   methods: {
   },
-  created () {
-    this.$nextTick(() => {
-      this.eventTime = this.$moment('2018-07-01 12:00:00').unix() - this.$moment().unix()
-    })
-  }
 }
 </script>
 
