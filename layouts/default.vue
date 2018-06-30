@@ -26,18 +26,16 @@
         </v-toolbar-title>
       </nuxt-link>
       <v-spacer></v-spacer>
-      <div class="align-center hidden-sm-and-down" style="margin-left: auto">
+      <v-toolbar-items class="align-center hidden-sm-and-down" style="margin-left: auto">
         <template v-for="item in items" >
-          <v-btn v-if="item.outlink" outline round :href="item.to" :key="item.title">
+          <v-btn v-if="item.outlink" flat :href="item.to" :key="item.title">
             {{ item.title }}
-            <v-icon size="medium" class="ml-1">{{ item.icon }}</v-icon>
           </v-btn>
-          <v-btn v-else outline round :to="item.to" :key="item.title">
+          <v-btn v-else flat :to="item.to" :key="item.title">
             {{ item.title }}
-            <v-icon size="medium" class="ml-1">{{ item.icon }}</v-icon>
           </v-btn>
         </template>
-      </div>
+      </v-toolbar-items>
       <v-btn
         icon
         class="hidden-md-and-up"
@@ -80,8 +78,8 @@ export default {
   data () {
     return {
       items: [
-        { icon: 'fa-backward', title: 'Recap 2017', to: 'https://www.youtube.com/watch?v=rbIo5dDwxX4', outlink: true },
-        // { icon: 'fa-youtube-play', title: 'View Full Video', to: 'https://www.youtube.com/watch?v=rbIo5dDwxX4', outlink: true }
+        { title: 'Kilas Balik', to: '/kilas-balik', outlink: false },
+        { title: 'Artikel', to: '/artikel', outlink: false }
       ],
       navDrawer: false,
       scroll: 0,
