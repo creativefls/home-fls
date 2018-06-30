@@ -107,7 +107,7 @@ nav
   .v-avatar--tile
     height 36px !important
     width auto !important
-  .btn
+  .v-btn
     text-transform capitalize
     font-size 16px
 
