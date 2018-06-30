@@ -39,7 +39,7 @@
           <v-btn v-else flat :to="item.to" :key="item.title">
             {{ item.title }}
           </v-btn>
-          <nuxt-link :key="i" v-if="i+1 == (items.length/2)" to="/">
+          <nuxt-link :key="i" v-if="i+1 == (items.length/2)" to="/" class="px-4 py-2">
             <v-avatar tile>
               <img src="https://user-images.githubusercontent.com/21119252/34459239-16407fee-ee1d-11e7-94c1-dc6446f962b0.png" alt="FLS Logo">
             </v-avatar>
@@ -65,7 +65,7 @@
             <h1 class="display-3">
               Future Leader Summit 2018
             </h1>
-            <h2 class="subtitle">
+            <h2 class="subtitle mb-3">
               <small>
                 Konferensi kepemudaan berskala nasional sebagai platform  kolaborasi yang digagas oleh Nusantara Muda.
                 <br>
