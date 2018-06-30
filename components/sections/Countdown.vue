@@ -13,8 +13,11 @@
             <template slot-scope="props">
               <v-layout class="success--text">
                 <v-flex xs3 class="display-3"> {{ props.days }} </v-flex>
+                <v-flex class="display-3">:</v-flex>
                 <v-flex xs3 class="display-3"> {{ props.hours }} </v-flex>
+                <v-flex class="display-3">:</v-flex>
                 <v-flex xs3 class="display-3"> {{ props.minutes }} </v-flex>
+                <v-flex class="display-3">:</v-flex>
                 <v-flex xs3 class="display-3"> {{ props.seconds }} </v-flex>
               </v-layout>
               <v-layout class="info--text">
@@ -28,7 +31,7 @@
         </v-flex>
       </v-layout>
       <br class="my-4">
-      <v-layout align-center class="py-4 my-4">
+      <v-layout align-center class="py-4 my-4" wrap>
         <v-flex md6>
           <img src="/images/tagline.png" alt="" width="100%" height="100%">
         </v-flex>

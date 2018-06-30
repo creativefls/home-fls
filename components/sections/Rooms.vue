@@ -9,7 +9,7 @@
       <br class="my-4">
       <v-container>
         <v-layout align-center justify-center wrap>
-          <v-flex v-for="room in rooms" :key="room.name" md4>
+          <v-flex v-for="room in rooms" :key="room.name" md4 xs6>
             <v-card class="elevation-0" color="transparent">
               <v-card-title style="justify-content: center;">
                 <img :src="room.image" alt="">
