@@ -3,7 +3,7 @@
     <v-flex text-xs-center>
       <div class="py-4"></div>
       <div class="py-4"></div>
-      <h1 class="display-3 info--text font-weight-medium">
+      <h1 @click="showCountdown = !showCountdown" class="display-3 info--text font-weight-medium cursor-pointer">
         Menuju Future Leader Summit 2018
       </h1>
       <br class="my-4">
@@ -25,7 +25,6 @@
               </v-layout>
             </template>
           </countdown>
-          <v-btn @click="showCountdown = !showCountdown">klik</v-btn>
         </v-flex>
       </v-layout>
       <br class="my-4">
@@ -52,7 +51,7 @@ export default {
   },
   created () {
     this.$nextTick(() => {
-      this.eventTime = this.$moment('2018-07-01 12:00:00').unix() - this.$moment().unix()
+      this.eventTime = this.$moment('2018-07-31 12:00:00').unix() - this.$moment().unix()
     })
   }
 }
