@@ -33,12 +33,12 @@ export default {
   data () {
     return {
       rooms: [
-        { image: '/images/rooms/education.png', name: 'Education', description: 'Free Education for Everyone.' },
+        { image: '/images/rooms/education.png', name: 'Education', description: 'Accessing The Knowledge Easily, Generating Educated People Evenly' },
         { image: '/images/rooms/entrepreneur.png', name: 'Entrepreneur', description: 'Seen the Unseen, Escalate the Oppotunity.' },
-        { image: '/images/rooms/poverty.png', name: 'Poverty', description: 'Reducing Poverty level Through Agriculture Potential.' },
-        { image: '/images/rooms/urban-planning.png', name: 'Urban Planning', description: 'Will Millenials Ever be Able to Affor a House?' },
-        { image: '/images/rooms/human-capital.png', name: 'Human Capital', description: 'Preparing and Maximizing Human Potential for Disruption Era.' },
-        { image: '/images/rooms/digital.png', name: 'Digital', description: 'Blockchain is the Next Big Thing.' }
+        { image: '/images/rooms/poverty.png', name: 'Poverty', description: 'Harnessing Agricultural Potential To Eradicate Poverty.' },
+        { image: '/images/rooms/urban-planning.png', name: 'Urban Planning', description: 'The Viable Solution for Sustainable Living.' },
+        { image: '/images/rooms/human-capital.png', name: 'Human Capital', description: 'Learning Ability In The Future Human Age.' },
+        { image: '/images/rooms/digital.png', name: 'Digital', description: 'Redefining The Next Big Thing of Digital Technology.' }
       ]
     }
   }
