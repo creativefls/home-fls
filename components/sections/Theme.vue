@@ -6,9 +6,11 @@
       <v-container>
         <v-layout align-center justify-center wrap>
           <v-flex md5>
-            asdf
+            <div class="videoWrapper">
+              <iframe width="560" height="349" src="https://www.youtube.com/embed/-coE1fb1xmw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
           </v-flex>
-          <v-flex text-xs-left md7 class="white--text">
+          <v-flex text-xs-left md7 class="white--text px-4">
             <h5 class="headline mb-2">Preparing The Future Leaders for Taking Charge in the Disruption Era.</h5>
             <p>Memasuki era disrupsi, dunia menghadapi situasi di mana pergerakan dunia industri ataupersaingan kerja tidak lagi linear. Perubahannya sangat cepat, fundamental dengan mengacak-acak pola tatanan lama untuk menciptakan tatanan baru</p>
             <p>Disrupsi menginisiasi lahirnya model bisnis baru dengan strategi lebih inovatif dan disruptif. Cakupan perubahannya luas mulai dari dunia bisnis, perbankan, transportasi, sosial masyarakat, hingga pendidikan. Era ini akan menuntut kita untuk berubah atau punah</p>
@@ -21,3 +23,19 @@
     </v-flex>
   </v-layout>
 </template>
+
+<style lang="stylus" scoped>
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
