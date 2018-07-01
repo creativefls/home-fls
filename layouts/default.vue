@@ -70,8 +70,8 @@ export default {
       items: [
         { title: 'Program', to: '/program', outlink: false },
         { title: 'Galeri', to: '/2017/galeri', outlink: true },
-        { title: 'Kilas Balik', to: '/kilas-balik', outlink: true },
-        { title: 'Artikel', to: '/artikel', outlink: false }
+        { title: 'Kilas Balik', to: '/kilas-balik', outlink: false },
+        { title: 'Artikel', to: '/artikel', outlink: true }
       ],
       navDrawer: false,
       scroll: 0
