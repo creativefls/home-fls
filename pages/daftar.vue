@@ -5,7 +5,9 @@
 <script>
 export default {
   mounted () {
-    window.location.href = 'http://daftar.futureleadersummit.org'
+    this.$nextTick(() => {
+      window.location.href = 'http://daftar.futureleadersummit.org'
+    })
   }
 }
 </script>
