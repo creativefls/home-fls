@@ -75,6 +75,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    vendor: ['babel-polyfill'],
     extend(config, ctx) {
 
       if (ctx.isServer) {
