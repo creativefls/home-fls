@@ -33,8 +33,8 @@ export default {
   data () {
     return {
       rooms: [
-        { image: '/images/rooms/education.png', name: 'Education', description: 'Accessing The Knowledge Easily, Generating Educated People Evenly' },
-        { image: '/images/rooms/entrepreneur.png', name: 'Entrepreneur', description: 'Seen the Unseen, Escalate the Oppotunity.' },
+        { image: '/images/rooms/education.png', name: 'Education', description: 'Accessing The Knowledge Easily, Generating Educated People Evenly.' },
+        { image: '/images/rooms/entrepreneur.png', name: 'Entrepreneur', description: 'Seen the Unseen, Escalate the Oppotunity!' },
         { image: '/images/rooms/poverty.png', name: 'Poverty', description: 'Harnessing Agricultural Potential To Eradicate Poverty.' },
         { image: '/images/rooms/urban-planning.png', name: 'Urban Planning', description: 'The Viable Solution for Sustainable Living.' },
         { image: '/images/rooms/human-capital.png', name: 'Human Capital', description: 'Learning Ability In The Future Human Age.' },
