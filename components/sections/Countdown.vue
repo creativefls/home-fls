@@ -3,13 +3,13 @@
     <v-flex text-xs-center>
       <div class="py-4"></div>
       <div class="py-4"></div>
-      <h1 @click="showCountdown = !showCountdown" class="display-3 info--text font-weight-medium cursor-pointer">
+      <h1 class="display-3 info--text font-weight-medium">
         Menuju Future Leader Summit 2018
       </h1>
       <br class="my-4">
       <v-layout align-center justify-center>
         <v-flex md6>
-          <countdown v-show="showCountdown" :time="eventTime * 1000">
+          <countdown :time="eventTime * 1000">
             <template slot-scope="props">
               <v-layout class="success--text">
                 <v-flex xs3 class="display-3"> {{ props.days }} </v-flex>
@@ -48,8 +48,7 @@
 export default {
   data () {
     return {
-      eventTime: 0,
-      showCountdown: false
+      eventTime: 0
     }
   },
   created () {
