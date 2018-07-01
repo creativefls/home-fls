@@ -5,7 +5,7 @@
 <script>
 export default {
   mounted () {
-    window.location.href = '/'
+    window.location.href = 'http://daftar.futureleadersummit.org'
   }
 }
 </script>
