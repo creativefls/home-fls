@@ -1,9 +1,10 @@
 <template>
   <v-container fluid>
-    <div style="background: url('/images/background-unyu.png') top center no-repeat; background-size: cover;">
-      <fls-hero></fls-hero>
-      <fls-countdown></fls-countdown>
-    </div>
+    <img src="/images/background-unyu.png" class="bg-hero" alt="">
+    <fls-hero></fls-hero>
+    <fls-countdown></fls-countdown>
+    <fls-theme></fls-theme>
+    <fls-tagline></fls-tagline>
     <fls-rooms></fls-rooms>
     <article-post />
   </v-container>
@@ -12,11 +13,13 @@
 <script>
 import FlsHero from '@/components/sections/Hero'
 import FlsCountdown from '@/components/sections/Countdown'
+import FlsTheme from '@/components/sections/Theme'
+import FlsTagline from '@/components/sections/Tagline'
 import FlsRooms from '@/components/sections/Rooms'
 import ArticlePost from '@/components/sections/ArticlePost'
 
 export default {
-  components: { ArticlePost, FlsHero, FlsCountdown, FlsRooms },
+  components: { ArticlePost, FlsHero, FlsCountdown, FlsRooms, FlsTheme, FlsTagline },
   data () {
     return {
     }
@@ -44,4 +47,13 @@ img.line-barcode {
 .card > *
   display block
   margin 0 auto
+
+.bg-hero
+  // background: url('/images/background-unyu.png') top center no-repeat
+  // background-size: cover
+  width 100%
+  position absolute
+  top: 0
+  z-index -1
+
 </style>

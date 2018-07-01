@@ -2,7 +2,7 @@
   <v-layout class="fullheight my-4 py-4 bg-success" align-center>
     <v-flex text-xs-center>
       <!-- <div class="py-4" style="background: url('/images/background-tangan.png') bottom center no-repeat; background-size: 100%;"></div> -->
-      <img src="/images/background-tangan.png" width="80%" alt="" style="margin-top: -100px;">
+      <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-top: -100px;">
       <h1 class="display-3 white--text font-weight-medium">
         Room FLS 2018
       </h1>
@@ -23,7 +23,7 @@
         </v-layout>
       </v-container>
       <div class="py-4"></div>
-      <img src="/images/background-tangan.png" width="80%" alt="" style="margin-bottom: -40px;">
+      <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px;">
     </v-flex>
   </v-layout>
 </template>

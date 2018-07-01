@@ -1,5 +1,5 @@
 <template>
-  <v-layout class="fullheight my-4 py-4" align-end>
+  <v-layout class="fullheight my-4 py-4" align-center>
     <v-flex text-xs-center>
       <div class="py-4"></div>
       <div class="py-4"></div>
@@ -31,14 +31,6 @@
         </v-flex>
       </v-layout>
       <br class="my-4">
-      <v-layout align-center class="py-4 my-4" wrap>
-        <v-flex md6>
-          <img src="/images/tagline.png" alt="" width="100%" height="100%">
-        </v-flex>
-        <v-flex md6>
-          <div class="display-1 pb-4 gold--text"> Preparing The Future Leaders for Taking Charge in the Disruption Era.</div>
-        </v-flex>
-      </v-layout>
       <div class="py-4"></div>
     </v-flex>
   </v-layout>
