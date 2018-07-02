@@ -49,6 +49,7 @@ module.exports = {
     '@/plugins/vuetify',
     '@/plugins/vee-validate',
     '@/plugins/moment',
+    '@/plugins/countdown',
     { src: '~plugins/ga.js', ssr: false }
   ],
 
@@ -74,6 +75,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    vendor: ['babel-polyfill'],
     extend(config, ctx) {
 
       if (ctx.isServer) {

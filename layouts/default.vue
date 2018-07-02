@@ -18,22 +18,32 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar :color="toolbarColor" class="d-flex" scroll-off-screen dense flat dark app>
-      <nuxt-link to="/">
+      <nuxt-link to="/" class="hidden-md-and-up">
         <v-toolbar-title>
           <v-avatar tile>
             <img src="https://user-images.githubusercontent.com/21119252/34459239-16407fee-ee1d-11e7-94c1-dc6446f962b0.png" alt="FLS Logo">
           </v-avatar>
         </v-toolbar-title>
       </nuxt-link>
-      <v-spacer></v-spacer>
+      <v-spacer class="hidden-md-and-up"></v-spacer>
       <v-toolbar-items class="align-center hidden-sm-and-down" style="margin-left: auto">
-        <template v-for="item in items" >
+        <!-- <nuxt-link to="/">
+          <v-avatar tile>
+            <img src="https://user-images.githubusercontent.com/21119252/34459239-16407fee-ee1d-11e7-94c1-dc6446f962b0.png" alt="FLS Logo">
+          </v-avatar>
+        </nuxt-link> -->
+        <template v-for="(item, i ) in items" >
           <v-btn v-if="item.outlink" flat :href="item.to" :key="item.title">
             {{ item.title }}
           </v-btn>
           <v-btn v-else flat :to="item.to" :key="item.title">
             {{ item.title }}
           </v-btn>
+          <nuxt-link :key="i" v-if="i+1 == (items.length/2)" to="/" class="px-4 py-2">
+            <v-avatar tile>
+              <img src="https://user-images.githubusercontent.com/21119252/34459239-16407fee-ee1d-11e7-94c1-dc6446f962b0.png" alt="FLS Logo">
+            </v-avatar>
+          </nuxt-link>
         </template>
       </v-toolbar-items>
       <v-btn
@@ -43,28 +53,8 @@
         <v-icon>menu</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-jumbotron
-      v-if="$route.path == '/'"
-      :gradient="gradientJumbotron"
-      :src="imageJumbotron"
-      v-scroll="onScroll"
-      dark >
-      <v-container fill-height>
-        <v-layout align-center>
-          <v-flex text-xs-center>
-            <h1 class="display-3">
-              Something cool is coming;
-              <br> Lead to Inspire Story
-            </h1>
-            <h2 class="subtitle">
-              <small>This time we'll hear story from</small> Jakarta
-            </h2>
-            <v-btn href="/inspire" color="error" large round depressed>Daftar Sekarang</v-btn>
-          </v-flex>
-        </v-layout>
-      </v-container>
-    </v-jumbotron>
-    <v-content :class="$route.path == '/' ? 'pt-0' : 'padding-page'">
+
+    <v-content :class="$route.path == '/' ? 'pt-0' : 'padding-page'" v-scroll="onScroll">
       <nuxt />
     </v-content>
     <layout-footer></layout-footer>
@@ -78,13 +68,13 @@ export default {
   data () {
     return {
       items: [
+        { title: 'Program', to: '/program', outlink: false },
+        { title: 'Galeri', to: '/2017/galeri', outlink: true },
         { title: 'Kilas Balik', to: '/kilas-balik', outlink: false },
-        { title: 'Artikel', to: '/artikel', outlink: false }
+        { title: 'Artikel', to: '/artikel', outlink: true }
       ],
       navDrawer: false,
-      scroll: 0,
-      gradientJumbotron: 'to right, #da22ff99, #9733ee99',
-      imageJumbotron: '/images/background-monas.jpg'
+      scroll: 0
     }
   },
   computed: {
@@ -114,18 +104,12 @@ nav
       max-width 80%
   .toolbar__title
     margin-left 0
-    .avatar.avatar--tile
-      height 36px !important
-      width auto !important
-  .btn
+  .v-avatar--tile
+    height 36px !important
+    width auto !important
+  .v-btn
     text-transform capitalize
     font-size 16px
-
-.jumbotron
-  min-height 100vh
-  .display-3
-    @media only screen and (max-device-width: 960px)
-      font-size 40px !important
 
 .accent.transparent
   background-color #2c3e50 !important
