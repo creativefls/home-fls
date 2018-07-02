@@ -135,7 +135,7 @@
               </v-card>
           </v-flex>
       </timeline-item>
-      <timeline-item bg-color="#9dd8e0">
+      <timeline-item bg-color="#9dd8e0" :hollow="true">
               <v-flex xs12 sm8 md6> 
                   <v-card>
                   <v-chip style="margin-top: -16px;" class="ml-4" label color="urban" text-color="white">
