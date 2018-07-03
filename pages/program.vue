@@ -1,5 +1,5 @@
 <template>
-<v-container style="margin-left: -24px;">
+<v-container fluid>
   <img src="/images/background-unyu.png" class="bg-hero" alt="">
   <v-layout justify-center>
     <v-flex md6>
@@ -112,6 +112,15 @@
                   </v-card>
               </v-flex>
           </timeline-item>
+        </timeline>
+      </v-layout>
+    </v-flex>
+  </v-layout>
+  <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">  
+  <v-layout justify-center class="bg-success">
+    <v-flex md6>
+      <v-layout>
+        <timeline>
           <timeline-title><div class="headline"><b>HARI KEDUA</b></div>Minggu, 9 September 2018</timeline-title>
           <timeline-item bg-color="#9dd8e0">
                   <v-flex xs12 >
@@ -168,7 +177,7 @@
       </v-layout>
     </v-flex>
   </v-layout>
-  <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px;">
+  <!-- <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px;"> -->
 </v-container>
 </template>
 
