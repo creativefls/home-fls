@@ -1,5 +1,6 @@
 <template>
-<v-container>
+<v-container style="margin-left: -24px;">
+  <img src="/images/background-unyu.png" class="bg-hero" alt="">
   <v-layout justify-center>
     <v-flex md6>
       <v-layout>
@@ -167,6 +168,7 @@
       </v-layout>
     </v-flex>
   </v-layout>
+  <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px;">
 </v-container>
 </template>
 
@@ -180,11 +182,11 @@ export default {
     TimelineTitle
   }
 }
-</script>
+</script> 
 
 <style lang="stylus">
 .card
-  border-radius 12px
+  border-radius 50%
   box-shadow 0 2px 12px 0 rgba(0,0,0,.1)
   &.fls-form-group
     .card__title
@@ -194,4 +196,11 @@ export default {
   .chip--label
     border-bottom-left-radius inherit
     border-bottom-right-radius inherit
+.bg-hero
+  // background: url('/images/background-unyu.png') top center no-repeat
+  // background-size: cover
+  width 100%
+  position absolute
+  top: 0
+  z-index -1
 </style>
