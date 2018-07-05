@@ -9,6 +9,6 @@
 
 <script>
 export default {
-  // middleware: ['daftar']
+  middleware: ['daftar']
 }
 </script>
