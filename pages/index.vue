@@ -51,7 +51,7 @@ img.line-barcode {
 .bg-hero
   // background: url('/images/background-unyu.png') top center no-repeat
   // background-size: cover
-  width 100%
+  min-width 100vw
   position absolute
   top: 0
   z-index -1

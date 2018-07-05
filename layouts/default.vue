@@ -69,7 +69,7 @@ export default {
     return {
       items: [
         { title: 'Program', to: '/program', outlink: false },
-        { title: 'Galeri', to: '/2017/galeri', outlink: true },
+        { title: 'Galeri', to: '/galeri', outlink: true },
         { title: 'Kilas Balik', to: '/kilas-balik', outlink: false },
         { title: 'Artikel', to: '/artikel', outlink: true }
       ],

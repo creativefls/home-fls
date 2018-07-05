@@ -12,7 +12,7 @@ module.exports = {
     title: pkg.description,
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, minimum-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
       { name: 'msapplication-TileColor', content: '#603cba' },
       { name: 'theme-color', content: '#ffffff' }

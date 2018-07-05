@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  middleware: ['daftar']
+  middleware: ['galeri']
 }
 </script>
