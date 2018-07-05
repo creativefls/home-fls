@@ -1,5 +1,9 @@
 <template>
-  <v-layout>Redirecting...</v-layout>
+  <v-layout>
+    <a href="http://daftar.futureleadersummit.org">
+      Redirecting...
+    </a>
+  </v-layout>
 </template>
 
 <script>
