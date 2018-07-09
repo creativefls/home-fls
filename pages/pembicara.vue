@@ -4,7 +4,7 @@
     <fls-hero></fls-hero>
     <v-layout class="fullheight" align-center justify-center>
         <v-flex md10 text-xs-center>
-            <div class="subtitle mb-4 py-4">
+            <div class="subtitle mb-4 py-4 black--text">
                 Rhenald Kasali merupakan seorang Guru Besar Ilmu Manajemen di Universitas Indonesia dan 
                 juga dikenal sebagai seorang praktisi bisnis yang sangat ulung dan telah menghasilkan 
                 banyak sekali tulisan yang menginspirasi banyak orang. Selain itu, beliau juga mendirikan 
@@ -12,41 +12,45 @@
                 danlingkungan hidup.
                 <br>
             </div>
-            <h1 class="display-2">
-                RHENALD KASALI
-            </h1>
-            <img src="/images/pembicara1.png">
-            <h3 class="display-1">
-                Praktisi Bisnis; <br>
-                Founder Rumah Perubahan
-            </h3>
+            <div class="black--text">
+                <h1 class="display-2">
+                    RHENALD KASALI
+                </h1>
+                <img src="/images/pembicara1.png">
+                <h3 class="display-1">
+                    Praktisi Bisnis; <br>
+                    Founder Rumah Perubahan
+                </h3>
+            </div>
         </v-flex>
     </v-layout>
     <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">
     <v-layout justify-center class="bg-success white--text">
         <v-flex md10 text-xs-center>
             <br class="my-2">
-            <div class="subtitle mb-4 py-4">
+            <div class="subtitle mb-4 py-4 black--text">
                 Alamanda Shantika pertama naik melalui karir cemerlangnya di salah satu startup 
                 bisnis transportasi di Indonesia sebagai Vice President of Product. Perjalannya berlanjut 
                 ketika beliau memutuskan untuk berpindah haluan untuk ikut berpartisipasi dalam membantu 
                 para startup muda Indonesia dalam mengembangkan bisnisnya melalui Binar Academy.
                 <br>
             </div>
-            <h1 class="display-2">
-                ALAMANDA SHANTIKA
-            </h1>
-            <img src="/images/pembicara2.png">
-            <h1 class="display-1">
-                Founder Binar Academy
-            </h1>
+            <div class="white--text">
+                <h1 class="display-2">
+                    ALAMANDA SHANTIKA
+                </h1>
+                <img src="/images/pembicara2.png">
+                <h1 class="display-1">
+                    Founder Binar Academy
+                </h1>
+            </div>
             <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">            
         </v-flex>
     </v-layout>    
     <v-layout justify-center class="bg-pembicara3 white--text">
         <v-flex md10 text-xs-center>
             <br class="my-2">
-            <div class="subtitle mb-4 py-4">
+            <div class="subtitle mb-4 py-4 black--text">
                 Christian Rijanto merupakan seorang pengusaha muda yang sukses dalam grup bisnis 
                 miliknya yang bernama ISMAYA GROUP. Peursahaan yang menjalankan usahanya dalam bidang 
                 foodand beverage, Clubs, Property and hotel, Event organizer dan juga Music Publishing. 
@@ -55,13 +59,15 @@
                 Entrepreneur, FortuneMagazine "Top 40 Under 40" dan lain sebagainya.
                 <br>
             </div>
-            <h1 class="display-2">
-                CHRISTIAN RIJANTO
-            </h1>
-            <img src="/images/pembicara3.png">
-            <h1 class="display-1">
-                Managing Partner & Founder Ismaya Group
-            </h1>
+            <div class="white--text">
+                <h1 class="display-2">
+                    CHRISTIAN RIJANTO
+                </h1>
+                <img src="/images/pembicara3.png">
+                <h1 class="display-1">
+                    Managing Partner & Founder Ismaya Group
+                </h1>    
+            </div>
             <br class="my-2">        
         </v-flex>
     </v-layout>
