@@ -3,10 +3,6 @@
     <v-flex text-xs-center>
       <div class="py-4"></div>
       <div class="py-4"></div>
-      <h1 class="display-3 info--text font-weight-medium">
-        Menuju Future Leader Summit 2018
-      </h1>
-      <br class="my-4">
       <v-layout align-center justify-center>
         <v-flex md6>
           <countdown :time="eventTime * 1000">
@@ -30,6 +26,10 @@
           </countdown>
         </v-flex>
       </v-layout>
+      <br class="my-4">
+      <h1 class="display-2 info--text font-weight-medium">
+        Hingga penutupan pendaftaran FLS 2018
+      </h1>
       <br class="my-4">
       <div class="py-4"></div>
     </v-flex>

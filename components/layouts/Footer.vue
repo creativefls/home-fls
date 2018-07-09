@@ -33,7 +33,11 @@
                   </div>
                   <div>
                     <v-icon size="small" class="mr-1">fa-phone</v-icon>
-                    081 2525 29921 (Kiki)
+                    0812 5252 9921 (Kiki)
+                  </div>
+                  <div>
+                    <v-icon size="small" class="mr-1">fa-phone</v-icon>
+                    0815 5388 8080  (Alex)
                   </div>
                   <v-btn
                     v-for="icon in icons"
