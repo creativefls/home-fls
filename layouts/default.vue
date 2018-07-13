@@ -71,7 +71,7 @@ export default {
         { title: 'Program', to: '/program', outlink: false },
         { title: 'Pembicara', to: '/pembicara', outlink: false },
         { title: 'Kilas Balik', to: '/kilas-balik', outlink: false },
-        { title: 'Artikel', to: '/artikel', outlink: true }
+        { title: 'Sponsorship', to: 'http://sponsorship.futureleadersummit.org', outlink: true }
       ],
       navDrawer: false,
       scroll: 0
