@@ -276,7 +276,7 @@
         </v-card-text>
         <v-card-actions>
           <v-layout justify-center>
-            <v-btn color="success" large round nuxt to="/daftar">Daftar Sekarang</v-btn>
+            <v-btn color="success" large round nuxt>Coming Soon!</v-btn>
           </v-layout>
         </v-card-actions>
       </v-card>
