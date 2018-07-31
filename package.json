@@ -19,6 +19,7 @@
     "vee-validate": "^2.0.6",
     "vue-cute-timeline": "^1.2.5",
     "vue-moment": "^3.2.0",
+    "vue-recaptcha": "^1.1.1",
     "vuetify": "^1.1.0"
   },
   "devDependencies": {
