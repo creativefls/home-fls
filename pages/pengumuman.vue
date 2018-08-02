@@ -1,40 +1,50 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <br class="my-2">
-      <v-card>
-        <v-card-text>
-          <v-container fluid grid-list-lg>
-                  <v-layout row>
-                    <form>
-                        <v-text-field
-                            v-validate="'required|email'"
-                            v-model="email"
-                            :error-messages="errors.collect('email')"
-                            label="E-mail"
-                            data-vv-name="email"
-                            required
-                        ></v-text-field>
-                        <vue-recaptcha
-                          ref="recaptcha"
-                          @verify="onVerify"
-                          @expired="onExpired"
-                          :sitekey="sitekey">
-                        </vue-recaptcha>
-                        <center>
-                          <br>
-                        <v-btn @click="submit">submit</v-btn>
-                        <v-btn @click="clear">clear</v-btn>
-                        </center>
-                    </form>
-                  </v-layout>
-                </v-container>
-        </v-card-text>
-      </v-card>
-      
-      <br class="my-4">
-    </v-flex>
-  </v-layout>
+  <v-container fluid>
+    <v-layout class="fullheight white--text" column justify-center align-center>
+    <h1 class="display-3">
+        Pengumuman Delegates
+      </h1>
+      <div class="subtitle mb-4 py-4">
+        Masukkan email yang kamu gunakan untuk mendaftar !
+      </div>
+      <img src="/images/background-unyu.png" class="bg-hero" alt="">      
+      <v-flex md10 text-xs-center>
+        <v-card>
+          <v-card-text>
+            <v-container fluid grid-list-lg>
+                    <v-layout row>
+                      <form>
+                          <v-text-field
+                              v-validate="'required|email'"
+                              v-model="email"
+                              :error-messages="errors.collect('email')"
+                              label="E-mail"
+                              data-vv-name="email"
+                              required
+                          ></v-text-field>
+                          <br class="my-2">
+
+                          <vue-recaptcha
+                            ref="recaptcha"
+                            @verify="onVerify"
+                            @expired="onExpired"
+                            :sitekey="sitekey">
+                          </vue-recaptcha>
+                          <center>
+                            <br class="my-1">
+                          <v-btn @click="submit">submit</v-btn>
+                          <v-btn @click="clear">clear</v-btn>
+                          </center>
+                      </form>
+                    </v-layout>
+                  </v-container>
+          </v-card-text>
+        </v-card>
+        
+        <br class="my-4">
+      </v-flex>
+    </v-layout>
+</v-container>
 </template>
 
 
@@ -91,3 +101,14 @@ import VueRecaptcha from 'vue-recaptcha'
   }
 </script>
 
+<style lang="stylus" scoped>
+
+.bg-hero
+  // background: url('/images/background-unyu.png') top center no-repeat
+  // background-size: cover
+  min-width 100vw
+  position absolute
+  top: 0
+  z-index -1
+
+</style>
