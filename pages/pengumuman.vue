@@ -15,16 +15,12 @@
                             data-vv-name="email"
                             required
                         ></v-text-field>
-                        <v-checkbox
-                            v-validate="'required'"
-                            v-model="checkbox"
-                            :error-messages="errors.collect('checkbox')"
-                            value="1"
-                            label="Option"
-                            data-vv-name="checkbox"
-                            type="checkbox"
-                            required
-                        ></v-checkbox>
+                        <vue-recaptcha
+                          ref="recaptcha"
+                          @verify="onVerify"
+                          @expired="onExpired"
+                          :sitekey="sitekey">
+                        </vue-recaptcha>
 
                         <v-btn @click="submit">submit</v-btn>
                         <v-btn @click="clear">clear</v-btn>
@@ -39,45 +35,37 @@
   </v-layout>
 </template>
 
+
 <script>
+
 import Vue from 'vue'
-  import VeeValidate from 'vee-validate'
+import VeeValidate from 'vee-validate'
+import VueRecaptcha from 'vue-recaptcha'
 
   Vue.use(VeeValidate)
-
+  Vue.use(VueRecaptcha)
   export default {
     $_veeValidate: {
       validator: 'new'
     },
 
     data: () => ({
-      name: '',
+      sitekey: '6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-', //key sementara dari google 
       email: '',
-      select: null,
-      items: [
-        'Item 1',
-        'Item 2',
-        'Item 3',
-        'Item 4'
-      ],
-      checkbox: null,
+      loginForm: {
+      recaptchaVerified: false,
+      pleaseTickRecaptchaMessage: ''
+      },
       dictionary: {
         attributes: {
           email: 'E-mail Address'
           // custom attributes
-        },
-        custom: {
-          name: {
-            required: () => 'Name can not be empty',
-            max: 'The name field may not be greater than 10 characters'
-            // custom messages
-          },
-          select: {
-            required: 'Select field is required'
-          }
         }
       }
     }),
+    components: {
+    'vue-recaptcha': VueRecaptcha
+    },
 
     mounted () {
       this.$validator.localize('en', this.dictionary)
@@ -88,11 +76,14 @@ import Vue from 'vue'
         this.$validator.validateAll()
       },
       clear () {
-        this.name = ''
         this.email = ''
-        this.select = null
-        this.checkbox = null
         this.$validator.reset()
+      },
+      onVerify: function (response) {
+        console.log('Verify: ' + response)
+      },
+      onExpired: function () {
+        console.log('Expired')
       }
     }
   }

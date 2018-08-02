@@ -17,6 +17,9 @@ module.exports = {
       { name: 'msapplication-TileColor', content: '#603cba' },
       { name: 'theme-color', content: '#ffffff' }
     ],
+    script: [
+      { src: 'https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit' }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png'},
