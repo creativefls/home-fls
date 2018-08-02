@@ -21,9 +21,11 @@
                           @expired="onExpired"
                           :sitekey="sitekey">
                         </vue-recaptcha>
-
+                        <center>
+                          <br>
                         <v-btn @click="submit">submit</v-btn>
                         <v-btn @click="clear">clear</v-btn>
+                        </center>
                     </form>
                   </v-layout>
                 </v-container>
