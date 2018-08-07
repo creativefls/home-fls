@@ -113,7 +113,7 @@ import swal from 'sweetalert2'
             'Sepertinya input yang kamu masukkan ada kekurangan. Silakan dicek kembali ya',
             'error'
           )
-        } else if(result){
+        } else {
           this.$axios.get('http://128.199.72.101:3000/api/Registrars/findOne', {
             //email from v-model text-field
             params: { 
@@ -140,7 +140,7 @@ import swal from 'sweetalert2'
                   `<p>Silahkan cek emailmu untuk informasi selanjutnya!</p>` +
                   `<p>Terima Kasih </p>`
               }) 
-            } else {
+            } else if (response.data.acceptanceStatus == 1) {
               swal({
                 width: 650,
                 imageUrl: 'https://user-images.githubusercontent.com/21119252/34459239-16407fee-ee1d-11e7-94c1-dc6446f962b0.png',
@@ -156,6 +156,22 @@ import swal from 'sweetalert2'
                   `<p>  </p>` +                                    
                   `<p>Silahkan cek emailmu untuk informasi selanjutnya!</p>` +
                   `<p>Terima Kasih </p>`
+              }) 
+            } else {
+              swal({
+                width: 650,
+                imageUrl: 'https://user-images.githubusercontent.com/21119252/34459239-16407fee-ee1d-11e7-94c1-dc6446f962b0.png',
+                imageWidth: 150,
+                html: 
+                  `<strong>Dear, <strong>${response.data.fullname}</strong> dari <strong>${response.data.province}</strong> !</strong> <br> ` +
+                  `<p>  </p>` +
+                  `<strong>Terima kasih karena sudah berpartisipasi dan mau mencoba untuk ambil bagian dalam merubah dunia dengan mendaftarkan dirimu di Future Leader Summit 2018.</strong>` +
+                  `<p>  </p>` +
+                  `<strong>Namun kami meminta maaf, karena untuk saat ini, kamu belum bisa bergabung menjadi salah satu delegasi di Future Leader Summit 2018 . </strong>` +           
+                  `<p>  </p>` +                  
+                  `<strong>Jangan putus asa dan tetap semangat ya! Masih banyak cara lainnya untuk ikut serta mengambil bagian dalam mengubah dunia.</strong>`+
+                  `<p>  </p>` +                                    
+                  `<p>Sampai jumpa di lain kesempatan!</p>`
               }) 
             }
           }).catch(error => {
@@ -174,10 +190,12 @@ import swal from 'sweetalert2'
         this.email = ''
         this.$validator.reset()
       },
-      onVerify: function (response) {
+      onVerify (response) {
+        this.loginForm.pleaseTickRecaptchaMessage = '';
+        this.loginForm.recaptchaVerified = true;
         console.log('Verify: ' + response)
       },
-      onExpired: function () {
+      onExpired () {
         console.log('Expired')
       }
     }
