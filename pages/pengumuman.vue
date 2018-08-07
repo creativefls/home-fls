@@ -24,17 +24,15 @@
                           ></v-text-field>
                           <br class="my-2">
 
-                          <!-- <vue-recaptcha
-                            v-validate="'required'"
-                            data-vv-as="captcha"
+                          <vue-recaptcha                          
                             ref="recaptcha"
                             @verify="onVerify"
                             @expired="onExpired"
                             :sitekey="sitekey">
-                          </vue-recaptcha> -->
+                          </vue-recaptcha>
                           <center>
                             <br class="my-1">
-                          <v-btn @click="submit" round>submit</v-btn>
+                          <v-btn @click="checkIfRecaptchaVerified" round>submit</v-btn>
                           <v-btn @click="clear" round>clear</v-btn>
                           </center>
                       </form>
@@ -58,14 +56,14 @@ import VueRecaptcha from 'vue-recaptcha'
 import swal from 'sweetalert2'
 
   Vue.use(VeeValidate)
-  Vue.use(VueRecaptcha)
+  Vue.component('vue-recaptcha', VueRecaptcha);
   export default {
     $_veeValidate: {
       validator: 'new'
     },
 
     data: () => ({
-      sitekey: '6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-', //key sementara dari google 
+      sitekey: '6LfLO2cUAAAAAGRsgNs1xhwLqZWmuXubot8DAFIs', //key sementara dari google 
       email: '',
       loginForm: {
       recaptchaVerified: false,
@@ -197,6 +195,17 @@ import swal from 'sweetalert2'
       },
       onExpired () {
         console.log('Expired')
+      },
+      checkIfRecaptchaVerified() {
+        if (!this.loginForm.recaptchaVerified) {
+          swal(
+            'Error',
+            'Sepertinya input yang kamu masukkan ada kekurangan. Silakan dicek kembali ya',
+            'error'
+          )
+        } else {
+          this.submit();
+        }
       }
     }
   }
