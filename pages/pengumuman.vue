@@ -104,14 +104,6 @@ import swal from 'sweetalert2'
         }
       },
       submit () {
-      this.$validator.validateAll().then((result) => {
-        if(!result) {
-          swal(
-            'Error',
-            'Sepertinya input yang kamu masukkan ada kekurangan. Silakan dicek kembali ya',
-            'error'
-          )
-        } else {
           this.$axios.get('http://128.199.72.101:3000/api/Registrars/findOne', {
             //email from v-model text-field
             params: { 
@@ -181,8 +173,6 @@ import swal from 'sweetalert2'
           
             console.log('error, ', error)
           })
-        }
-      })
     },
       clear () {
         this.email = ''
@@ -197,15 +187,25 @@ import swal from 'sweetalert2'
         console.log('Expired')
       },
       checkIfRecaptchaVerified() {
-        if (!this.loginForm.recaptchaVerified) {
-          swal(
-            'Error',
-            'Sepertinya input yang kamu masukkan ada kekurangan. Silakan dicek kembali ya',
-            'error'
-          )
-        } else {
-          this.submit();
-        }
+        this.$validator.validateAll().then((result) => {
+          if(!result) {
+            swal(
+              'Error',
+              'Sepertinya kamu belum mengisi email dengan benar. Silakan dicek kembali ya',
+              'error'
+            )
+          } else {
+              if (!this.loginForm.recaptchaVerified) {
+                swal(
+                  'Error',
+                  'Sepertinya kamu belum menyelesaikan proses reCAPTCHA. Silakan tekan tombol reCAPTCHA',
+                  'error'
+                )
+              } else {
+                this.submit();
+              }
+          }
+        })
       }
     }
   }
