@@ -134,7 +134,7 @@ import swal from 'sweetalert2'
                   `<p>  </p>` +
                   `<strong>Setelah melewati tahap seleksi, kami mengucapkan selamat karena kamu telah terpilih menjadi <br> Delegates Future Leader Summit 2018 di Room <strong>${response.data.roomFirst}</strong></strong>` +
                   `<p>  </p>` +
-                  // `<center><img src="getRoomImageUrl(${response.data.roomFirst})" class="room-Pengumuman"></img><center>` +             
+                  `<center><img src="${ this.getRoomImageUrl(response.data.roomFirst) }" class="room-Pengumuman"></img><center>` +             
                   `<strong>Mari mulai ambil bagian untuk perubahan dunia bersama 239 pemuda-pemudi terbaik Indonesia di konferensi Future Leader Summit yang diselenggarakan di <strong>Semarang</strong> tanggal <strong>8-9 September 2018</strong> mendatang. </strong>`+
                   `<p>  </p>` +                                    
                   `<p>Silahkan cek emailmu untuk informasi selanjutnya!</p>` +
