@@ -63,6 +63,8 @@ import swal from 'sweetalert2'
     },
 
     data: () => ({
+      //sitekey FLS : 6LfLO2cUAAAAAGRsgNs1xhwLqZWmuXubot8DAFIs
+      //sitekey Testing : 6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-
       sitekey: '6LfLO2cUAAAAAGRsgNs1xhwLqZWmuXubot8DAFIs', //key udah bener 
       email: '',
       loginForm: {
@@ -108,7 +110,9 @@ import swal from 'sweetalert2'
             //email from v-model text-field
             params: { 
               filter: {
-                where: { email: this.email } 
+                where: { 
+                  email: { regexp:  `^${this.email}/i` } 
+                } 
               }
             }
           }).then(response => {
