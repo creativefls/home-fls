@@ -63,7 +63,7 @@ import swal from 'sweetalert2'
     },
 
     data: () => ({
-      sitekey: '6LfLO2cUAAAAAGRsgNs1xhwLqZWmuXubot8DAFIs', //key sementara dari google 
+      sitekey: '6LfLO2cUAAAAAGRsgNs1xhwLqZWmuXubot8DAFIs', //key udah bener 
       email: '',
       loginForm: {
       recaptchaVerified: false,
@@ -162,15 +162,26 @@ import swal from 'sweetalert2'
                   `<strong>Jangan putus asa dan tetap semangat ya! Masih banyak cara lainnya untuk ikut serta mengambil bagian dalam mengubah dunia.</strong>`+
                   `<p>  </p>` +                                    
                   `<p>Sampai jumpa di lain kesempatan!</p>`
+                  
               }) 
             }
           }).catch(error => {
-            swal(
-              'Error',
-              'Sistem error',
-              'error'
-            )
-          
+            console.log('error, ',error);
+            
+            if (error.response.data.error.statusCode == 404) {
+              //jika email tidak terdaftar
+              swal(
+                'Error',
+                'Sepertinya email kamu tidak terdaftar. Silahkan di cek kembali ya',
+                'error'              
+              )
+            } else {
+              swal(
+                'Error',
+                error.message,
+                'error'
+              )
+            }
             console.log('error, ', error)
           })
     },
