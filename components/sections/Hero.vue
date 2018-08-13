@@ -9,7 +9,7 @@
         <br>
         FLS bertujuan untuk mempersiapkan pemimpin-pemimpin muda dari seluruh Indonesia dalam membuat perubahan signifikan untuk Indonesia yang lebih baik.
       </div>
-      <v-btn href="/pengumuman" color="info" large round depressed>Pengumuman Delegates</v-btn>
+      <v-btn href="http://sponsorship.futureleadersummit.org/" color="info" large round depressed>Become a Sponsor</v-btn>
     </v-flex>
   </v-layout>
 </template>

@@ -3,7 +3,7 @@
     <v-flex text-xs-center>
       <div class="py-4"></div>
       <h1 class="display-2 info--text font-weight-medium">
-        Pengumuman Delegates FLS 2018
+        Future Leader Summit <br> 2018
       </h1>
       <div class="py-4"></div>
       <v-layout align-center justify-center>
@@ -45,7 +45,7 @@ export default {
   },
   created () {
     this.$nextTick(() => {
-      this.eventTime = this.$moment('2018-08-08 19:00:00').unix() - this.$moment().unix()
+      this.eventTime = this.$moment('2018-09-08 07:00:00').unix() - this.$moment().unix()
     })
   }
 }
