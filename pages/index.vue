@@ -1,31 +1,33 @@
 <template>
   <v-container fluid>
+    <img src="/images/background-unyu.png" class="bg-hero" alt="">
+    <fls-hero></fls-hero>
+    <fls-countdown></fls-countdown>
+    <fls-theme></fls-theme>
+    <fls-tagline></fls-tagline>
+    <fls-rooms></fls-rooms>
     <article-post />
-    <v-layout class="section-insta success" wrap justify-center>
-      <v-flex align-content-center="" md6 class="pb-5">
-        <v-card flat dark color="transparent">
-          <h1 class="headline text-xs-center follow">Official Line</h1>
-          <img class="image line-barcode" src="https://user-images.githubusercontent.com/27270350/34720177-5c3e398c-f570-11e7-9aa4-2f340592da2c.jpg" alt="line barcode">
-        </v-card>
-      </v-flex>
-
-    </v-layout>
   </v-container>
 </template>
 
 <script>
+import FlsHero from '@/components/sections/Hero'
+import FlsCountdown from '@/components/sections/Countdown'
+import FlsTheme from '@/components/sections/Theme'
+import FlsTagline from '@/components/sections/Tagline'
+import FlsRooms from '@/components/sections/Rooms'
 import ArticlePost from '@/components/sections/ArticlePost'
 
 export default {
-  components: { ArticlePost },
+  components: { ArticlePost, FlsHero, FlsCountdown, FlsRooms, FlsTheme, FlsTagline },
   data () {
     return {
     }
   },
+  computed: {
+  },
   methods: {
   },
-  created () {
-  }
 }
 </script>
 
@@ -45,4 +47,13 @@ img.line-barcode {
 .card > *
   display block
   margin 0 auto
+
+.bg-hero
+  // background: url('/images/background-unyu.png') top center no-repeat
+  // background-size: cover
+  min-width 100vw
+  position absolute
+  top: 0
+  z-index -1
+
 </style>

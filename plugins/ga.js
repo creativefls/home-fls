@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 // Google Analytics tracking ID
-let gaCode = 'UA-81348820-2'
+let gaCode = 'UA-121342753-1'
 
 export default ({ app }) => {
   /*

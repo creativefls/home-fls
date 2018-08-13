@@ -1,4 +1,4 @@
-$body-font-family = "Gandhi Sans", "Ubuntu", "Helvetica Neue", "Helvetica", "Open Sans", "Arial", sans-serif
+$body-font-family = "Ubuntu", "Helvetica Neue", "Helvetica", "Open Sans", "Arial", sans-serif
 $color-pack = false
 
 // Import Vuetify styling
@@ -8,6 +8,32 @@ $color-pack = false
 .page
   @extend .fade-transition
 
+html
+  font-size: 16px
+  overflow-x: hidden
+  width: 100%
+
 .container
   &.fluid
     padding: 0
+
+.v-toolbar__content
+  display: flex
+  .v-toolbar__items
+    flex-grow: 1
+    justify-content: center
+    display: flex
+
+.fullheight
+  min-height: 100vh
+
+.bg-success
+  background-color: #18bc97
+.bg-info
+  background-color: #3883c7
+
+.application.theme--light
+  background: transparent
+
+.cursor-pointer
+  cursor pointer

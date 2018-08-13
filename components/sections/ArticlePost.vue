@@ -43,8 +43,13 @@ export default {
         }
       }).then(response => {
         this.posts = response.data
+        let promises = []
         this.posts.forEach(async (post) => {
-          await this.getThumbnail(post.featured_media)
+          promises.push(this.getThumbnail(post.featured_media))
+        })
+        Promise.all(promises).then(values => {
+          console.log('janji semua ', values);
+          this.thumbnail = values
         })
         this.title = 'Artikel'
       }).catch(error => {
@@ -53,14 +58,16 @@ export default {
     },
     getThumbnail (mediaId) {
       console.log(mediaId, 'mulai humb')
-      this.$axios.get('https://futureleadersummit.org/artikel/wp-json/wp/v2/media/' + mediaId)
-        .then(response => {
-          console.log(mediaId, 'dapat humbn')
-          this.thumbnail.push(response.data.media_details.sizes.medium_large.source_url)
-        })
-        .catch(error => {
-          console.log(error.message);
-        })
+      return new Promise((resolve, reject) => {
+        this.$axios.get('https://futureleadersummit.org/artikel/wp-json/wp/v2/media/' + mediaId)
+          .then(response => {
+            console.log(mediaId, 'dapat humbn')
+            resolve(response.data.media_details.sizes.medium.source_url)
+          })
+          .catch(error => {
+            console.log(error.message);
+          })
+      })
     }
   },
   created () {
