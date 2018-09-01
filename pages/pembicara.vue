@@ -45,132 +45,30 @@
             <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">            
         </v-flex>
     </v-layout>
-
-    <!-- ROOM 1 -->
-    <v-layout justify-center class="bg-room1 white--text">
-        <v-flex md10 text-xs-center>
-            <br class="my-2">
-            <div class="display-2 mb-4 py-4 white--text">
-                ROOM HUMAN CAPITAL
-                <br>
-            </div>
-            <div class="black--text" xs6>
-                <h1 class="display-2">
-                    AGUNG BENZHARIE
-                </h1>
-                <img class="pembicara" src="/images/hc_pembicara1.png">
-                <h1 class="display-1">
-                    CEO & Co-Founder Warung Pintar
-                </h1>    
-            </div>
-            <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">            
-        </v-flex>
+    <v-layout 
+        v-for="pembicara in pembicara_rooms" 
+        :key="pembicara.title"
+        :style="{ backgroundColor: pembicara.bgColor }"
+        justify-center 
+        class="white--text">
+            <v-flex md10 text-xs-center>
+                <br class="my-2">
+                <div class="display-2 mb-4 py-4 white--text">
+                    {{ pembicara.title }}
+                    <br>
+                </div>
+                <div class="black--text" xs6>
+                    <h1 class="display-2">
+                        {{ pembicara.name }}
+                    </h1>
+                    <img class="pembicara" :src="pembicara.image">
+                    <h1 class="display-1">
+                        {{ pembicara.description }}
+                    </h1>    
+                </div>
+                <img :src="pembicara.tangan" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">            
+            </v-flex>
     </v-layout>
-    <!-- ROOM 2 -->
-    <v-layout justify-center class="bg-room2 white--text">
-        <v-flex md10 text-xs-center>
-            <br class="my-2">
-            <div class="display-2 mb-4 py-4 white--text">
-                ROOM POVERTY
-                <br>
-            </div>
-            <div class="black--text" xs6>
-                <h1 class="display-2">
-                    YOHANES SUGIHTONONUGROHO
-                </h1>
-                <img class="pembicara" src="/images/pov_pembicara1.png">
-                <h1 class="display-1">
-                    CEO & Co-Founder Crowde
-                </h1>    
-            </div>
-            <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">            
-        </v-flex>
-    </v-layout>
-
-    <!-- ROOM 3 -->
-    <v-layout justify-center class="bg-room3 white--text">
-        <v-flex md10 text-xs-center>
-            <br class="my-2">
-            <div class="display-2 mb-4 py-4 white--text">
-                ROOM URBAN PLANING
-                <br>
-            </div>
-            <div class="black--text" xs6>
-                <h1 class="display-2">
-                    MARCO WIJAYAKUSUMA
-                </h1>
-                <img class="pembicara" src="/images/up_pembicara1.png">
-                <h1 class="display-1">
-                    Founder dan Direktur RUJAK Center For Urban Studies
-                </h1>    
-            </div>
-            <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">            
-        </v-flex>
-    </v-layout>
-
-    <!-- ROOM 4 -->
-    <v-layout justify-center class="bg-room4 white--text">
-        <v-flex md10 text-xs-center>
-            <br class="my-2">
-            <div class="display-2 mb-4 py-4 white--text">
-                ROOM EDUCATION
-                <br>
-            </div>
-            <div class="black--text" xs6>
-                <h1 class="display-2">
-                    WINASTWAN GORA SWAJATI
-                </h1>
-                <img class="pembicara" src="/images/edu_pembicara1.png">
-                <h1 class="display-1">
-                    Founder <i>Kelase.com</i>
-                </h1>    
-            </div>
-            <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">            
-        </v-flex>
-    </v-layout>
-
-    <!-- ROOM 5 -->
-    <v-layout justify-center class="bg-room5 white--text">
-        <v-flex md10 text-xs-center>
-            <br class="my-2">
-            <div class="display-2 mb-4 py-4 white--text">
-                ROOM DIGITAL
-                <br>
-            </div>
-            <div class="black--text" xs6>
-                <h1 class="display-2">
-                    TEGUH HARMANDA
-                </h1>
-                <img class="pembicara" src="/images/dig_pembicara1.png">
-                <h1 class="display-1">
-                    COO Tokocrypto
-                </h1>    
-            </div>
-            <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">            
-        </v-flex>
-    </v-layout>
-    
-    <!-- ROOM 6 -->
-    <v-layout justify-center class="bg-room6 white--text">
-        <v-flex md10 text-xs-center>
-            <br class="my-2">
-            <div class="display-2 mb-4 py-4 white--text">
-                ROOM ENTREPRENEURSHIP
-                <br>
-            </div>
-            <div class="black--text" xs6>
-                <h1 class="display-2">
-                    RANI SOEBIJANTORO
-                </h1>
-                <img class="pembicara" src="/images/ent_pembicara1.png">
-                <h1 class="display-1">
-                    Co-Founder Bookabuku
-                </h1>    
-            </div>
-            <br class="my-2">
-        </v-flex>
-    </v-layout>
-
   </v-container>
 </template>
 
@@ -183,11 +81,52 @@ export default {
     return {
         pembicara_rooms: [
             {
-                title: '',
+                title: 'ROOM HUMAN CAPITAL',
+                image: '/images/hc_pembicara1.png',
+                name: 'AGUNG BENZHARIE',
+                description: 'CEO & Co-Founder Warung Pintar',
+                bgColor: '#3883c7',
+                tangan: '/images/background-tangan.png'
+            },
+            {
+                title: 'ROOM POVERTY',
                 image: '/images/pov_pembicara1.png',
-                name: 'Education',
-                description: 'Accessing The Knowledge Easily, Generating Educated People Evenly.',
-                longDesc: ''
+                name: 'YOHANES SUGIHTONONUGROHO',
+                description: 'CEO & Co-Founder Crowde',
+                bgColor: '#FFA726',
+                tangan: '/images/background-tangan.png'
+            },
+            {
+                title: 'ROOM URBAN PLANING',
+                image: '/images/up_pembicara1.png',
+                name: 'MARCO WIJAYAKUSUMA',
+                description: 'Founder dan Direktur RUJAK Center For Urban Studies',
+                bgColor: '#6D4C41',
+                tangan: '/images/background-tangan.png'
+            },
+            {
+                title: 'ROOM EDUCATION',
+                image: '/images/edu_pembicara1.png',
+                name: 'WINASTWAN GORA SWAJATI',
+                description: 'Founder Kelase.com',
+                bgColor: '#FF7043',
+                tangan: '/images/background-tangan.png'
+            },
+            {
+                title: 'ROOM DIGITAL',
+                image: '/images/dig_pembicara1.png',
+                name: 'TEGUH HARMANDA',
+                description: 'COO Tokocrypto',
+                bgColor: '#FFEE58',
+                tangan: '/images/background-tangan.png'
+            },
+            {
+                title: 'ROOM ENTREPRENEURSHIP',
+                image: '/images/ent_pembicara1.png',
+                name: 'RANI SOEBIJANTORO',
+                description: 'Co-Founder Bookabuku',
+                bgColor: '#69F0AE',
+                tangan: ''
             },
         ]
     }
