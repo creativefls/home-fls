@@ -5,28 +5,50 @@
     <v-layout class="fullheight" align-center justify-center>
         <v-flex md10 text-xs-center>
             <div class="subtitle mb-4 py-4 black--text">
+<<<<<<< HEAD
                 Faye Simanjuntak menjadi sosok yang inspiratif, saat usianya masih 12 tahun, ia 
                 mendirikan Rumah Faye, yaitu organisasi nirlaba yang fokus pada isu perdagangan anak.
                  Kini, di usianya yang sudah menginjak 16 tahun ia semakin membuktikan bahwa usia muda 
                  bukan menjadi penghalang untuk menjadi agen perubahan.
+=======
+                Rhenald Kasali merupakan seorang Guru Besar Ilmu Manajemen di Universitas Indonesia dan 
+                juga dikenal sebagai seorang praktisi bisnis yang sangat ulung dan telah menghasilkan 
+                banyak sekali tulisan yang menginspirasi banyak orang. Selain itu, beliau juga mendirikan 
+                Rumah Perubahan, sebuah yayasan yang bergerak dalam bidang pendidikan, Kesejahteraan sosial, 
+                danlingkungan hidup.
+>>>>>>> 4cf0f7cdc65890496c69f42ce0b486180e9a56da
                 <br>
             </div>
             <div class="black--text">
                 <h1 class="display-2">
+<<<<<<< HEAD
                     FAYE SIMANJUNTAK                    
                 </h1>
                 <img class="pembicara" src="/images/ga_pembicara1.png">
                 <h3 class="display-1">
                     Co-Founder Rumah Faye                    
+=======
+                    RHENALD KASALI
+                </h1>
+                <img src="/images/pembicara1.png">
+                <h3 class="display-1">
+                    Praktisi Bisnis; <br>
+                    Founder Rumah Perubahan
+>>>>>>> 4cf0f7cdc65890496c69f42ce0b486180e9a56da
                 </h3>
             </div>
         </v-flex>
     </v-layout>
+<<<<<<< HEAD
     <!-- <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px"> -->
+=======
+    <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">
+>>>>>>> 4cf0f7cdc65890496c69f42ce0b486180e9a56da
     <v-layout justify-center class="bg-success white--text">
         <v-flex md10 text-xs-center>
             <br class="my-2">
             <div class="subtitle mb-4 py-4 black--text">
+<<<<<<< HEAD
                 Iman Sjafei adalah salah pelaku industri kreatif di Indonesia, pernah berkarya 
                 menjadi seorang jurnalis, kini Ia melebarkan sayap menjadi CEO dari <i>Asumsi.co</i> sebuah 
                 platform media online serta menjadi CFO dari <i>Rekreasi.co</i> yang merupakan <i>creative 
@@ -172,6 +194,50 @@
         </v-flex>
     </v-layout>
 
+=======
+                Alamanda Shantika pertama naik melalui karir cemerlangnya di salah satu startup 
+                bisnis transportasi di Indonesia sebagai Vice President of Product. Perjalannya berlanjut 
+                ketika beliau memutuskan untuk berpindah haluan untuk ikut berpartisipasi dalam membantu 
+                para startup muda Indonesia dalam mengembangkan bisnisnya melalui Binar Academy.
+                <br>
+            </div>
+            <div class="white--text">
+                <h1 class="display-2">
+                    ALAMANDA SHANTIKA
+                </h1>
+                <img src="/images/pembicara2.png">
+                <h1 class="display-1">
+                    Founder Binar Academy
+                </h1>
+            </div>
+            <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">            
+        </v-flex>
+    </v-layout>    
+    <v-layout justify-center class="bg-pembicara3 white--text">
+        <v-flex md10 text-xs-center>
+            <br class="my-2">
+            <div class="subtitle mb-4 py-4 black--text">
+                Christian Rijanto merupakan seorang pengusaha muda yang sukses dalam grup bisnis 
+                miliknya yang bernama ISMAYA GROUP. Peursahaan yang menjalankan usahanya dalam bidang 
+                foodand beverage, Clubs, Property and hotel, Event organizer dan juga Music Publishing. 
+                Di usiayang masih tergolong produktif ini, beliau telah mencetak banyak prestasi seperti 
+                Indonesia'sTop 50 Creative Entrepreneur, Featured on BBC World as Indonesia's Rising 
+                Entrepreneur, FortuneMagazine "Top 40 Under 40" dan lain sebagainya.
+                <br>
+            </div>
+            <div class="white--text">
+                <h1 class="display-2">
+                    CHRISTIAN RIJANTO
+                </h1>
+                <img src="/images/pembicara3.png">
+                <h1 class="display-1">
+                    Managing Partner & Founder Ismaya Group
+                </h1>    
+            </div>
+            <br class="my-2">        
+        </v-flex>
+    </v-layout>
+>>>>>>> 4cf0f7cdc65890496c69f42ce0b486180e9a56da
   </v-container>
 </template>
 
@@ -182,6 +248,7 @@ export default {
   components: { FlsHero },
   data () {
     return {
+<<<<<<< HEAD
         pembicara_rooms: [
             {
                 title: 'ROOM HUMAN CAPITAL',
@@ -220,6 +287,8 @@ export default {
                 description: 'CEO & Co-Founder Warung Pintar.'
             },
         ]
+=======
+>>>>>>> 4cf0f7cdc65890496c69f42ce0b486180e9a56da
     }
   },
   computed: {
@@ -234,12 +303,15 @@ img.line-barcode {
   width auto
   height 256px
 }
+<<<<<<< HEAD
 
 img.pembicara {
   height 256px
   border-radius 50%
   border solid 5px black 
 }
+=======
+>>>>>>> 4cf0f7cdc65890496c69f42ce0b486180e9a56da
 .section-insta
   position relative
   background: #2ecc71;  /* fallback for old browsers */
@@ -252,6 +324,7 @@ img.pembicara {
   display block
   margin 0 auto
 
+<<<<<<< HEAD
 .bg-room1
   background-color: #3883c7
 
@@ -270,6 +343,11 @@ img.pembicara {
 .bg-room6
   background-color #69F0AE
 
+=======
+.bg-pembicara3
+  background-color: #3883c7
+
+>>>>>>> 4cf0f7cdc65890496c69f42ce0b486180e9a56da
 .bg-hero
   // background: url('/images/background-unyu.png') top center no-repeat
   // background-size: cover

@@ -2,6 +2,9 @@
   <v-layout class="fullheight my-4 py-4" align-center>
     <v-flex text-xs-center>
       <div class="py-4"></div>
+      <h1 class="display-2 info--text font-weight-medium">
+        Future Leader Summit <br> 2018
+      </h1>
       <div class="py-4"></div>
       <v-layout align-center justify-center>
         <v-flex md6>
@@ -27,9 +30,6 @@
         </v-flex>
       </v-layout>
       <br class="my-4">
-      <h1 class="display-2 info--text font-weight-medium">
-        Hingga penutupan pendaftaran FLS 2018
-      </h1>
       <br class="my-4">
       <div class="py-4"></div>
     </v-flex>
@@ -45,7 +45,7 @@ export default {
   },
   created () {
     this.$nextTick(() => {
-      this.eventTime = this.$moment('2018-07-31 12:00:00').unix() - this.$moment().unix()
+      this.eventTime = this.$moment('2018-09-08 07:00:00').unix() - this.$moment().unix()
     })
   }
 }
