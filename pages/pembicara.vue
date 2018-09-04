@@ -5,19 +5,19 @@
     <v-layout class="fullheight" align-center justify-center>
         <v-flex md10 text-xs-center>
             <div class="subtitle mb-4 py-4 black--text">
-                Faye Simanjuntak menjadi sosok yang inspiratif, saat usianya masih 12 tahun, ia 
+                Faye Simanjuntak menjadi sosok yang inspiratif, saat usianya masih 12 tahun, ia
                 mendirikan Rumah Faye, yaitu organisasi nirlaba yang fokus pada isu perdagangan anak.
-                 Kini, di usianya yang sudah menginjak 16 tahun ia semakin membuktikan bahwa usia muda 
-                 bukan menjadi penghalang untuk menjad`i agen perubahan.
+                 Kini, di usianya yang sudah menginjak 16 tahun ia semakin membuktikan bahwa usia muda
+                 bukan menjadi penghalang untuk menjadi agen perubahan.
                 <br>
             </div>
             <div class="black--text">
                 <h1 class="display-2">
-                    FAYE SIMANJUNTAK                    
+                    FAYE SIMANJUNTAK
                 </h1>
                 <img class="pembicara" src="/images/ga_pembicara1.png">
                 <h3 class="display-1">
-                    Co-Founder Rumah Faye                    
+                    Co-Founder Rumah Faye
                 </h3>
             </div>
         </v-flex>
@@ -27,29 +27,29 @@
         <v-flex md10 text-xs-center>
             <br class="my-2">
             <div class="subtitle mb-4 py-4 black--text">
-                Iman Sjafei adalah salah pelaku industri kreatif di Indonesia, pernah berkarya 
-                menjadi seorang jurnalis, kini Ia melebarkan sayap menjadi CEO dari <i>Asumsi.co</i> sebuah 
-                platform media online serta menjadi CFO dari <i>Rekreasi.co</i> yang merupakan <i>creative 
+                Iman Sjafei adalah salah pelaku industri kreatif di Indonesia, pernah berkarya
+                menjadi seorang jurnalis, kini Ia melebarkan sayap menjadi CEO dari <i>Asumsi.co</i> sebuah
+                platform media online serta menjadi CFO dari <i>Rekreasi.co</i> yang merupakan <i>creative
                 agency nasional</i>.
                 <br>
             </div>
             <div class="black--text">
                 <h1 class="display-2">
-                    IMAN SJAFEI                    
+                    IMAN SJAFEI
                 </h1>
                 <img class="pembicara" src="/images/ga_pembicara2.png">
                 <h1 class="display-1">
-                    CEO of <i>Asumsi.co</i> dan CFO of <i>Rekreasi.co</i>                    
+                    CEO of <i>Asumsi.co</i> dan CFO of <i>Rekreasi.co</i>
                 </h1>
             </div>
-            <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">            
+            <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">
         </v-flex>
     </v-layout>
-    <v-layout 
-        v-for="pembicara in pembicara_rooms" 
+    <v-layout
+        v-for="pembicara in pembicara_rooms"
         :key="pembicara.title"
         :style="{ backgroundColor: pembicara.bgColor }"
-        justify-center 
+        justify-center
         class="white--text">
             <v-flex md10 text-xs-center>
                 <br class="my-2">
@@ -64,9 +64,9 @@
                     <img class="pembicara" :src="pembicara.image">
                     <h1 class="display-1">
                         {{ pembicara.description }}
-                    </h1>    
+                    </h1>
                 </div>
-                <img :src="pembicara.tangan" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">            
+                <img :src="pembicara.tangan" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">
             </v-flex>
     </v-layout>
   </v-container>
@@ -116,7 +116,7 @@ export default {
                 title: 'ROOM DIGITAL',
                 image: '/images/dig_pembicara1.png',
                 name: 'TEGUH HARMANDA',
-                description: 'COO Tokocrypto',
+                description: 'CCO Tokocrypto',
                 bgColor: '#FFEE58',
                 tangan: '/images/background-tangan.png'
             },
@@ -147,7 +147,7 @@ img.line-barcode {
 img.pembicara {
   height 256px
   border-radius 50%
-  border solid 5px black 
+  border solid 5px black
 }
 .section-insta
   position relative
