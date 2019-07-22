@@ -1,12 +1,12 @@
 <template>
-  <v-container fluid>
-    <img src="/images/background.svg" class="bg-hero" alt="">
+  <v-container fluid style="background-image: url('/images/background.svg'); background-repeat: no-repeat; background-size: cover">
+    <!-- <img src="/images/background.svg" class="bg-hero" alt=""> -->
     <fls-hero></fls-hero>
     <fls-rooms></fls-rooms>
     <fls-theme></fls-theme>
     <fls-countdown></fls-countdown>
     <RegisterArea />
-    <fls-tagline></fls-tagline>
+    <!-- <fls-tagline></fls-tagline> -->
     <article-post />
   </v-container>
 </template>

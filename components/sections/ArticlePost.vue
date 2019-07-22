@@ -1,7 +1,7 @@
 <template>
   <v-container v-show="title" grid-list-md>
     <h1 class="display-2 text-xs-center py-4 white--text">{{ title }}</h1>
-    <v-layout wrap>
+    <v-layout>
       <v-flex md4 v-for="(post, index) in posts" :key="post.id">
         <v-card>
           <v-card-media :src="thumbnail[index]" height="200px">
@@ -75,3 +75,4 @@ export default {
   }
 }
 </script>
+
