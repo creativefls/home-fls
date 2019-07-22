@@ -1,7 +1,7 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <div class="display-1">FLS Timeline 2018</div>
+      <div class="display-1">FLS Timeline 2019</div>
       <br class="my-2">
       <v-card>
         <v-chip style="margin-top: -16px;" class="ml-4" label color="urban" text-color="white">
@@ -267,7 +267,7 @@
           <v-chip style="margin-top: -16px; border-radius:11px" label color="success" text-color="white">
             <div class="subheading">
               <v-icon medium class="white--text">event</v-icon>
-              <b>FLS 2018</b>
+              <b>FLS 2019</b>
             </div>
           </v-chip>
         </v-layout>

@@ -1,11 +1,11 @@
 {
   "name": "home-fls",
   "version": "1.0.0",
-  "description": "Future Leader Summit 2018",
+  "description": "Future Leader Summit 2019",
   "author": "wkwksama",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "HOST=0.0.0.0 PORT=8080 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"

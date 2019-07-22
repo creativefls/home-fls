@@ -70,7 +70,10 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-
+  server: {
+    port: 8080,
+    host: '0.0.0.0'
+  },
   /*
   ** Build configuration
   */

@@ -1,11 +1,12 @@
 <template>
   <v-container fluid>
-    <img src="/images/background-unyu.png" class="bg-hero" alt="">
+    <img src="/images/background.svg" class="bg-hero" alt="">
     <fls-hero></fls-hero>
-    <fls-countdown></fls-countdown>
-    <fls-theme></fls-theme>
-    <fls-tagline></fls-tagline>
     <fls-rooms></fls-rooms>
+    <fls-theme></fls-theme>
+    <fls-countdown></fls-countdown>
+    <RegisterArea />
+    <fls-tagline></fls-tagline>
     <article-post />
   </v-container>
 </template>
@@ -17,9 +18,10 @@ import FlsTheme from '@/components/sections/Theme'
 import FlsTagline from '@/components/sections/Tagline'
 import FlsRooms from '@/components/sections/Rooms'
 import ArticlePost from '@/components/sections/ArticlePost'
+import RegisterArea from '@/components/sections/RegisterArea'
 
 export default {
-  components: { ArticlePost, FlsHero, FlsCountdown, FlsRooms, FlsTheme, FlsTagline },
+  components: { ArticlePost, FlsHero, FlsCountdown, FlsRooms, FlsTheme, FlsTagline, RegisterArea},
   data () {
     return {
     }

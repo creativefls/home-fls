@@ -1,6 +1,6 @@
 <template>
   <v-container v-show="title" grid-list-md>
-    <h1 class="headline text-xs-center py-4">{{ title }}</h1>
+    <h1 class="display-2 text-xs-center py-4 white--text">{{ title }}</h1>
     <v-layout wrap>
       <v-flex md4 v-for="(post, index) in posts" :key="post.id">
         <v-card>
@@ -30,7 +30,7 @@
 export default {
   data () {
     return {
-      title: null,
+      title: 'Artikel',
       posts: [],
       thumbnail: []
     }
