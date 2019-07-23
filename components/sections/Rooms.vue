@@ -3,7 +3,7 @@
     <v-flex text-xs-center>
       <!-- <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-top: -100px;"> -->
       <h1 class="display-3 white--text font-weight-medium">
-        Room FLS 2019
+        FLS 2019 Room Issues
       </h1>
       <br class="my-4">
       <v-container>

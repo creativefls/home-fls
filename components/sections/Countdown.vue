@@ -47,7 +47,7 @@ export default {
   created() {
     this.$nextTick(() => {
       this.eventTime =
-        this.$moment("2019-09-08 07:00:00").unix() - this.$moment().unix();
+        this.$moment("2019-08-20 23:59:59").unix() - this.$moment().unix();
     });
   }
 };
