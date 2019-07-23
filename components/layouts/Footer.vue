@@ -25,11 +25,11 @@
                   <p class="subheading">HUBUNGI KAMI</p>
                   <div>
                     <v-icon size="small" class="mr-1">fa-envelope</v-icon>
-                    info[at]futureleadersummit.org
+                    info@futureleadersummit.org
                   </div>
                   <div>
                     <v-icon size="small" class="mr-1">fa-envelope</v-icon>
-                    futureleadersummit[at]gmail.com
+                    futureleadersummit@gmail.com
                   </div>
                   <div>
                     <v-icon size="small" class="mr-1">fa-phone</v-icon>
