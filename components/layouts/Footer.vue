@@ -139,11 +139,10 @@ export default {
             'error'
           )
         } else {
-          this.$axios.post('http://128.199.72.101:3001/api/messages', {
+          this.$axios.post('https://api.futureleadersummit.org/messages', {
             fullName: this.guestFullName,
             email: this.guestEmail,
             message: this.guestMessage,
-            isSubscribe: this.checkboxNewsletter,
             nickName: this.guestNickName
           }).then(response => {
             swal(
