@@ -263,6 +263,43 @@
       </v-card>
       <br class="my-4">
       <v-card>
+        <v-chip style="margin-top: -16px;" class="ml-4" label color="secondary" text-color="white">
+          <div class="subheading">
+            <v-icon medium class="white--text">event</v-icon>
+            <b>FLS 2018</b>
+          </div>
+        </v-chip>
+        <v-card-text>
+          <v-container fluid grid-list-lg>
+                  <v-layout row>
+                    <v-flex xs7>
+                      <div>
+                        <div class="headline grey">9 September 2018</div>
+                        <div class="headline"><b>"Grab the Chance, Take the Charge!"</b></div><br>
+                        <div>
+                          <b class="txt-secondary">2</b> Hari
+                          <b class="txt-secondary">6</b> Isu
+                          <b class="txt-secondary">15</b> Pembicara
+                        </div>
+                        <div>
+                          <b class="txt-secondary">240</b> Peserta
+                          <b class="txt-secondary">25.512</b> Pendaftar
+                        </div>
+                      </div>
+                    </v-flex>
+                    <v-flex xs5>
+                      <v-card-media
+                        src="https://futureleadersummit.org/2017/assets/img/kilas/2012.png"
+                        height="125px"
+                        contain
+                      ></v-card-media>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+        </v-card-text>
+      </v-card>
+      <br class="my-4">
+      <v-card>
         <v-layout justify-center>
           <v-chip style="margin-top: -16px; border-radius:11px" label color="success" text-color="white">
             <div class="subheading">

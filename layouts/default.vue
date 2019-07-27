@@ -54,7 +54,7 @@
       </v-btn>
     </v-toolbar>
 
-    <v-content :class="$route.path == '/' ? 'pt-0' : 'padding-page'" v-scroll="onScroll">
+    <v-content :class="'pt-0'" v-scroll="onScroll">
       <nuxt />
     </v-content>
     <layout-footer></layout-footer>
@@ -79,7 +79,7 @@ export default {
   },
   computed: {
     toolbarColor () {
-      if (this.scroll < 50 && this.$route.path == '/') {
+      if (this.scroll < 50) {
         return 'transparent'
       } else {
         return 'accent transparent'

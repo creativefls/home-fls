@@ -1,15 +1,23 @@
 <template>
-<v-container fluid>
-  <img src="/images/background-unyu.png" class="bg-hero" alt="">
+<v-container fluid class="program-bg" >
+  <!-- <img src="/images/background.svg" class="bg-hero" alt=""> -->
   <v-layout justify-center>
-    <v-flex md6>
-      <v-layout>
+    <v-flex md6 align-center class="program-container">
+      <v-card color="transparent">
+        <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3" color="primary" text-color="white">
+        <div class="title">
+            <!-- <v-icon left medium class="white--text">event</v-icon> -->
+            <div class="display-1" style="margin: 1rem">Our Program</div>
+        </div>
+        </v-chip>        
+      <v-card-text>
+      <v-layout pb-5 mt-5>
         <timeline>
-          <timeline-title class="pertama mb-4"><div class="headline"><b>HARI PERTAMA</b></div>Sabtu, 8 September 2018</timeline-title>
+          <timeline-title class="pertama mb-4"><div class="headline"><b>HARI PERTAMA</b></div>Jumat, 20 September 2019</timeline-title>
           <timeline-item bg-color="#9dd8e0cc">
                   <v-flex xs12 >
-                      <v-card>
-                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3" label color="urban" text-color="white">
+                      <v-card hover flat>
+                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3" color="primary" text-color="white">
                       <div class="title">
                           <v-icon left medium class="white--text">event</v-icon>
                           <b>Welcoming Session</b>
@@ -20,9 +28,7 @@
                               <v-layout row>
                                 <v-flex xs>
                                       <div class="program-content">
-                                        Merupakan rangkaian pembukaan acara Future Leader Summit 2018 yang berisi
-                                        penyambutan delegasi pemuda dan penjelasan mengenai isu yang diangkat dan
-                                        rangkaian acara Future Leader Summit 2018.
+                                        Welcoming Session adalah sebuah acara penyambutan delegates untuk memulai perjalanannya di FLS 2019. Pada acara ini disampaikan betapa pentingnya peran pemuda oleh keyspeaker (Walikota Semarang) serta sambutan-sambutan seremonial.
                                       </div>
                                 </v-flex>
                               </v-layout>
@@ -33,11 +39,11 @@
           </timeline-item>
           <timeline-item bg-color="#9dd8e0cc">
                   <v-flex xs12 >
-                      <v-card>
-                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3" label color="urban" text-color="white">
+                      <v-card hover flat>
+                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
                       <div class="title">
                           <v-icon left medium class="white--text">event</v-icon>
-                          <b>Ideation Lab</b>
+                          <b>Think-Tanks</b>
                       </div>
                       </v-chip>
                       <v-card-text>
@@ -45,11 +51,7 @@
                               <v-layout row>
                                 <v-flex xs>
                                       <div class="program-content">
-                                        Merupakan salah satu sesi dalam rangkaian acara FLS 2018
-                                        yang akan membahas berbagai isu terkini yang berkaitan dengan
-                                        6 room dengan bimbingan seorang pakardalam isu tersebut.
-                                        Hasil akhir dari sesi ini adalah sebuah idea canvas yang akandisusun
-                                        secara berkelompok dengan tujuan utama: Indonesia emas 2045.
+                                        Sesi ini berisi inisiasi isu-isu yang akan dibawakan pada tiap platform. Speaker yang mengisi sesi ini bertujuan untuk membuka pandangan terhadap isu-isu yang akan dibahas. Dalam diskusi yang dilakukan delegates terbuka untuk menjelaskan masalah-msalah yang relevan pada tempat tinggalnya.
                                       </div>
                                 </v-flex>
                               </v-layout>
@@ -60,11 +62,11 @@
           </timeline-item>
           <timeline-item bg-color="#9dd8e0cc">
                   <v-flex xs12 >
-                      <v-card>
-                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3" label color="urban" text-color="white">
+                      <v-card hover flat>
+                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
                       <div class="title">
                           <v-icon left medium class="white--text">event</v-icon>
-                          <b>Future Leader in Action</b>
+                          <b>Caseplatform</b>
                       </div>
                       </v-chip>
                       <v-card-text>
@@ -72,11 +74,7 @@
                               <v-layout row>
                                 <v-flex xs>
                                       <div class="program-content">
-                                        Sebagai validasi ide dari Ideation Lab, sesi ini merupakan sebuah role-play
-                                        games dimana para Delegates akan mendapatkan kesempatan untuk berperan
-                                        sebagai lembaga pemerintah dalam menyelesaikan beberapa studi kasus untuk
-                                        mengatasi permasalahan masyarakat dan juga sebagai sebuah gambaran dalam
-                                        mewujudkanIndonesia yang lebih baik di tahun 2045.
+                                        Pada sesi ini, delegates pada setiap platform akan diberikan tugas berupa pencarian solusi atas masalah-masalah yang ada. Delegates diwajibkan untuk melakukan validasi terhadap keadaan sekitar agar solusi yang diberikan realistis. Setiap platform akan dibagi menjadi 4 kelompok beranggotakan 10 orang (asumsi 1 platform berisi 40 orang). Sesi ini berisi 3 masalah yang saling terkait dan membutuhkan solusi dari berbagai sudut pandang Penta Helix Collaboration dengan komposisi akademisi, pebisnis, komunitas, pemerintah dan media. Selanjutnya ada presentasi yang dibawakan masing-masing kelompok untuk diambil
                                       </div>
                                 </v-flex>
                               </v-layout>
@@ -87,11 +85,11 @@
           </timeline-item>
           <timeline-item bg-color="#9dd8e0cc">
                   <v-flex xs12 >
-                      <v-card>
-                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3" label color="urban" text-color="white">
+                      <v-card hover flat>
+                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
                       <div class="title">
                           <v-icon left medium class="white--text">event</v-icon>
-                          <b>Gala Future Leader</b>
+                          <b>A Night to Remember</b>
                       </div>
                       </v-chip>
                       <v-card-text>
@@ -99,11 +97,7 @@
                               <v-layout row>
                                 <v-flex xs>
                                       <div class="program-content">
-                                        Sebuah ajang networking night pada Future Leader Summit 2018 dimana pada
-                                        momen ini para delegates bisa saling memperkenalkan diri, berbagi cerita,
-                                        pengalaman, maupun untuk saling menginspirasi satu sama lain. Kegiatan ini
-                                        bertujuan untuk saling mengakrabkan sesama Delegates maupun dengan Alumni
-                                        dan Rangers FLS.
+                                        Sesi ini merupakan sesi makan malam yang sekaligus dikemas sebagai sesi pencarian relasi bagi para delegates. Sesi ini membawa suasana santai dengan berbagai pengisi acara yang disiapkan. Komunitas dipersilahkan untuk membuka booth pada sesi ini dan delegates diberikan waktu free-time sebagai bentuk apresiasi ke komunitas. 
                                       </div>
                                 </v-flex>
                               </v-layout>
@@ -114,21 +108,25 @@
           </timeline-item>
         </timeline>
       </v-layout>
+      </v-card-text>
+      </v-card>
     </v-flex>
   </v-layout>
-  <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px">
-  <v-layout justify-center class="bg-info">
+  <!-- <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px; margin-left: 120px"> -->
+  <v-layout justify-center>
     <v-flex md6>
+    <v-card color="transparent">
+    <v-card-text>      
       <v-layout>
         <timeline>
-          <timeline-title class="kedua mb-4"><div class="headline"><b>HARI KEDUA</b></div>Minggu, 9 September 2018</timeline-title>
+          <timeline-title class="kedua mb-4"><div class="headline"><b>HARI KEDUA</b></div>Sabtu, 21 September 2019</timeline-title>
           <timeline-item bg-color="#9dd8e0cc">
                   <v-flex xs12 >
-                      <v-card>
-                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3" label color="urban" text-color="white">
+                      <v-card hover flat>
+                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
                       <div class="title">
                           <v-icon left medium class="white--text">event</v-icon>
-                          <b>Discovery Panel</b>
+                          <b>City Tour & Future Leaders in Action</b>
                       </div>
                       </v-chip>
                       <v-card-text>
@@ -136,9 +134,7 @@
                               <v-layout row>
                                 <v-flex xs>
                                       <div class="program-content">
-                                        Discovery Panel merupakan sesi dalam Future Leader Summit dimana delegates
-                                        akan mempelajari millennials must-have-skills yang akan tersedia dalam 10 pilihan
-                                        skill yang dapat dipilih oleh Delegates secara digital di hari sebelumnya.
+                                        Sesi ini bertujuan untuk mengenalkan kota Semarang sebagai salah satu destinasi pariwisata di Jawa Tengah. Objek-objek wisata yang dikunjungi mencakup landmark yang menjadi ciri khas kota Semarang seperti : Lawang Sewu, Simpang Lima, Kota Lama, Museum Ronggowarsito, Museum Mandala Bakti bahkan Kampung Pelangi. Sesi ini dapat dipandu perwakilan Dinas Pariwisata kota Semarang sebagai pemandu wisata dan penyampai informasi seputar semarang. Selain itu, pada sesi ini terdapat aksi sosial yang dilakukan delegates sebagai representasi peran pemuda.
                                       </div>
                                 </v-flex>
                               </v-layout>
@@ -149,8 +145,8 @@
           </timeline-item>
           <timeline-item bg-color="#9dd8e0cc">
                   <v-flex xs12 >
-                      <v-card>
-                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3" label color="urban" text-color="white">
+                      <v-card hover flat>
+                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
                       <div class="title">
                           <v-icon left medium class="white--text">event</v-icon>
                           <b>Grand Summit</b>
@@ -161,10 +157,7 @@
                               <v-layout row>
                                 <v-flex xs>
                                       <div class="program-content">
-                                        Merupakan acara puncak dari Future Leader Summit dengan menghadirkan
-                                        keynote speaker inspiratif untuk memaparkan poin-poin penting tema utama dari
-                                        FLS 2018: “Preparing the Future Leaders to be ready to Take Charge of the Way in the
-                                        Disruptive Era”
+                                        Sesi ini merupakan sesi puncak dari inisiasi gagasan-gagasan para pemuda untuk membangun bangsa. Pada sesi ini delegates dikumpulkan pada satu ruangan. Metode pada sesi ini menggunakan Penta Helix Collaboration dimana keseluruhan delegates dibagi menjadi 5 kelompok besar dengan peran masing-masing yang berbeda (akademisi, pebisnis, komunitas, pemerintah, media). Sesi ini dimoderatori 1 atau 2 orang untuk memuluskan flow dari diskusi yang berlangsung. Harapannya hasil dari diskusi merupakan solusi riil dan berdasarkan pertimbangan peran yang diberikan.
                                       </div>
                                 </v-flex>
                               </v-layout>
@@ -173,8 +166,92 @@
                   </v-card>
               </v-flex>
           </timeline-item>
+          <timeline-item bg-color="#9dd8e0cc">
+                  <v-flex xs12 >
+                      <v-card hover flat>
+                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
+                      <div class="title">
+                          <v-icon left medium class="white--text">event</v-icon>
+                          <b>Youth Talk</b>
+                      </div>
+                      </v-chip>
+                      <v-card-text>
+                      <v-container fluid grid-list-lg>
+                              <v-layout row>
+                                <v-flex xs>
+                                      <div class="program-content">
+                                        Sesi ini merupakan sesi diperuntukkan untuk khalayak umum dengan opsi venue (taman indonesia kaya, taman srigunting, museum ronggowarsito, museum mandala bhakti, lawang sewu). Selain untuk delegates, sesi ini juga bertujuan untuk memperkenalkan FLS pada khalayak ramai khususnya masyarakat semarang. Sesi ini rencananya akan diisi oleh public figure (Hamish Daud, Chelsea Islan, Najwa Shihab, Andy Noya). Materi yang disampaikan berupa seberapa penting peran pemuda dalam membangun peradaban manusia pada sebuah negara. 
+                                      </div>
+                                </v-flex>
+                              </v-layout>
+                              </v-container>
+                      </v-card-text>
+                  </v-card>
+              </v-flex>
+          </timeline-item>          
         </timeline>
       </v-layout>
+    </v-card-text>
+  </v-card>      
+    </v-flex>
+  </v-layout>
+  <v-layout justify-center>
+    <v-flex md6>
+    <v-card color="transparent">
+    <v-card-text>      
+      <v-layout>
+        <timeline>
+          <timeline-title class="kedua mb-4"><div class="headline"><b>HARI KETIGA</b></div>Minggu, 22 September 2019</timeline-title>
+          <timeline-item bg-color="#9dd8e0cc">
+                  <v-flex xs12 >
+                      <v-card hover flat>
+                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
+                      <div class="title">
+                          <v-icon left medium class="white--text">event</v-icon>
+                          <b>Self-Improvement</b>
+                      </div>
+                      </v-chip>
+                      <v-card-text>
+                      <v-container fluid grid-list-lg>
+                              <v-layout row>
+                                <v-flex xs>
+                                      <div class="program-content">
+                                        Tak dapat dipungkiri bahwa peningkatan kualitas pemuda sangat diperlukan untuk merealisasikan ide-ide yang telah dikembangan oleh delegates. Dengan adanya sesi ini diharapkan adanya peningkatan kualitas SDM dari segi softskill yang dipilih sesuai kebutuhan masing-masing. Rencananya sesi ini akan menggandeng komunitas sebagai partner pengisi. Venue yang digunakan berupa hotel terakhir bermalamnya delegates. Sesi ini berlangsung secara non formal seperti percakapan pada umumnya dengan materi yang dibawa masing-masing platform.
+                                      </div>
+                                </v-flex>
+                              </v-layout>
+                              </v-container>
+                      </v-card-text>
+                  </v-card>
+              </v-flex>
+          </timeline-item>
+          <timeline-item bg-color="#9dd8e0cc">
+                  <v-flex xs12 >
+                      <v-card hover flat>
+                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
+                      <div class="title">
+                          <v-icon left medium class="white--text">event</v-icon>
+                          <b>The Show</b>
+                      </div>
+                      </v-chip>
+                      <v-card-text>
+                      <v-container fluid grid-list-lg>
+                              <v-layout row>
+                                <v-flex xs>
+                                      <div class="program-content">
+                                        Sesi ini merupakan sesi puncak dimana menjadikan FLS 2019 sebagai pusat perhatian baik dalam lingkup nasional. Acara ini bertujuan untuk meningkatkan brand awareness terhadap FLS itu sendiri. Selain itu, sesi. ini bertujuan untuk memberikan pengalaman yang berbeda dengan pembicara skala Internasional. Beberapa kemungkinan speakers yang dapat dipilih seperti The Tedx, Jack Ma, Tony Fernandes.
+                                      </div>
+                                </v-flex>
+                              </v-layout>
+                              </v-container>
+                      </v-card-text>
+                  </v-card>
+              </v-flex>
+          </timeline-item>       
+        </timeline>
+      </v-layout>
+    </v-card-text>
+  </v-card>      
     </v-flex>
   </v-layout>
   <!-- <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px;"> -->
@@ -202,7 +279,7 @@ export default {
       padding-bottom 0
     .card__text
       padding-top 0
-  .chip--label
+  .chip--
     border-bottom-left-radius inherit
     border-bottom-right-radius inherit
 .bg-hero
@@ -215,14 +292,18 @@ export default {
 
 .timeline-title
   color #fff !important
-  border 2px solid white
-  border-radius 16px
+  border-radius 10px
   padding 6px 18px
   &.pertama
-    background-color #3883c7
+    background-color #E91E63
   &.kedua
-    background-color #feb34d
-
+    background-color #E91E63
+.program-bg
+  background-image url('/images/background.svg')
+  background-size cover
+  background-repeat no-repeat
+.program-container  
+  margin-top: 10rem
 .program-content
   font-size 18px
   font-weight 500
