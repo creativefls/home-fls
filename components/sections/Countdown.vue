@@ -11,16 +11,16 @@
         <v-flex md6>
           <countdown :time="eventTime * 1000">
             <template slot-scope="props">
-              <v-layout class="success--text border-count">
-                <v-flex xs3 class="display-3">{{ props.days }}</v-flex>
-                <v-flex class="display-3">:</v-flex>
-                <v-flex xs3 class="display-3">{{ props.hours }}</v-flex>
-                <v-flex class="display-3">:</v-flex>
-                <v-flex xs3 class="display-3">{{ props.minutes }}</v-flex>
-                <v-flex class="display-3">:</v-flex>
-                <v-flex xs3 class="display-3">{{ props.seconds }}</v-flex>
+              <v-layout class="success--text border-count mx-5">
+                <v-flex xs3 class="display-2">{{ props.days }}</v-flex>
+                <v-flex class="display-2">:</v-flex>
+                <v-flex xs3 class="display-2">{{ props.hours }}</v-flex>
+                <v-flex class="display-2">:</v-flex>
+                <v-flex xs3 class="display-2">{{ props.minutes }}</v-flex>
+                <v-flex class="display-2">:</v-flex>
+                <v-flex xs3 class="display-2">{{ props.seconds }}</v-flex>
               </v-layout>
-              <v-layout class="mt-3 success--text">
+              <v-layout class="mt-3 success--text mx-5">
                 <v-flex xs3 class="headline">Hari</v-flex>
                 <v-flex xs3 class="headline">Jam</v-flex>
                 <v-flex xs3 class="headline">Menit</v-flex>

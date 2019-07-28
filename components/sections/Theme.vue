@@ -8,7 +8,7 @@
           <v-flex>
             <div class="videoWrapper">
               <h5 class="display-1 mb-5 white--text">After Movie FLS 2018</h5>
-              <iframe width="800" height="500" src="https://www.youtube.com/embed/8nUhzLAd4nM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="500px" src="https://www.youtube.com/embed/8nUhzLAd4nM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </v-flex>
         </v-layout>

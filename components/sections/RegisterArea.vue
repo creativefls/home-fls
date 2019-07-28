@@ -7,7 +7,6 @@
       <div class="headline mb-4 py-4">
         <v-btn color="error" round depressed>CONTACT US</v-btn>
       </div>
-      <!-- <v-btn href="http://sponsorship.futureleadersummit.org/" color="info" large round depressed>Become a Sponsor</v-btn> -->
     </v-flex>
   </v-layout>
 </template>

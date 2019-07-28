@@ -1,7 +1,7 @@
 <template>
   <v-container v-show="title" grid-list-md>
     <h1 class="display-2 text-xs-center py-4 white--text">{{ title }}</h1>
-    <v-layout>
+    <v-layout wrap>
       <v-flex md4 v-for="(post, index) in posts" :key="post.id">
         <v-card>
           <v-card-media :src="thumbnail[index]" height="200px">
@@ -13,7 +13,7 @@
             <div> <v-icon>event</v-icon> {{ post.date | moment("MMMM D, YYYY")  }}</div>
           </v-card-title>
           <v-card-text>
-            <div v-html="post.excerpt.rendered"></div>
+            <div v-html="post.excerpt.rendered.substring(0,150)+'...'"></div>
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>

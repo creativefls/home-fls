@@ -13,7 +13,7 @@
             </div>
             <div class="black--text">
                 <h1 class="display-2">
-                    FAYE SIMANJUNTAK
+                    Bekali lala Founder Rumah Faye
                 </h1>
                 <img class="pembicara" src="/images/ga_pembicara1.png">
                 <h3 class="display-1">

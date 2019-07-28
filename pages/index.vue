@@ -1,6 +1,6 @@
 <template>
   <v-container fluid style="background-image: url('/images/background.svg'); background-repeat: no-repeat; background-size: cover">
-    <!-- <img src="/images/background.svg" class="bg-hero" alt=""> -->
+    <img v-lazy="'/images/background.svg'" class="bg-hero" alt="">
     <fls-hero></fls-hero>
     <fls-rooms></fls-rooms>
     <fls-theme></fls-theme>
@@ -51,8 +51,6 @@ img.line-barcode {
   margin 0 auto
 
 .bg-hero
-  // background: url('/images/background-unyu.png') top center no-repeat
-  // background-size: cover
   min-width 100vw
   position absolute
   top: 0

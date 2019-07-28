@@ -195,66 +195,6 @@
   </v-card>      
     </v-flex>
   </v-layout>
-  <v-layout justify-center>
-    <v-flex md6>
-    <v-card color="transparent">
-    <v-card-text>      
-      <v-layout>
-        <timeline>
-          <timeline-title class="kedua mb-4"><div class="headline"><b>HARI KETIGA</b></div>Minggu, 22 September 2019</timeline-title>
-          <timeline-item bg-color="#9dd8e0cc">
-                  <v-flex xs12 >
-                      <v-card hover flat>
-                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
-                      <div class="title">
-                          <v-icon left medium class="white--text">event</v-icon>
-                          <b>Self-Improvement</b>
-                      </div>
-                      </v-chip>
-                      <v-card-text>
-                      <v-container fluid grid-list-lg>
-                              <v-layout row>
-                                <v-flex xs>
-                                      <div class="program-content">
-                                        Tak dapat dipungkiri bahwa peningkatan kualitas pemuda sangat diperlukan untuk merealisasikan ide-ide yang telah dikembangan oleh delegates. Dengan adanya sesi ini diharapkan adanya peningkatan kualitas SDM dari segi softskill yang dipilih sesuai kebutuhan masing-masing. Rencananya sesi ini akan menggandeng komunitas sebagai partner pengisi. Venue yang digunakan berupa hotel terakhir bermalamnya delegates. Sesi ini berlangsung secara non formal seperti percakapan pada umumnya dengan materi yang dibawa masing-masing platform.
-                                      </div>
-                                </v-flex>
-                              </v-layout>
-                              </v-container>
-                      </v-card-text>
-                  </v-card>
-              </v-flex>
-          </timeline-item>
-          <timeline-item bg-color="#9dd8e0cc">
-                  <v-flex xs12 >
-                      <v-card hover flat>
-                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
-                      <div class="title">
-                          <v-icon left medium class="white--text">event</v-icon>
-                          <b>The Show</b>
-                      </div>
-                      </v-chip>
-                      <v-card-text>
-                      <v-container fluid grid-list-lg>
-                              <v-layout row>
-                                <v-flex xs>
-                                      <div class="program-content">
-                                        Sesi ini merupakan sesi puncak dimana menjadikan FLS 2019 sebagai pusat perhatian baik dalam lingkup nasional. Acara ini bertujuan untuk meningkatkan brand awareness terhadap FLS itu sendiri. Selain itu, sesi. ini bertujuan untuk memberikan pengalaman yang berbeda dengan pembicara skala Internasional. Beberapa kemungkinan speakers yang dapat dipilih seperti The Tedx, Jack Ma, Tony Fernandes.
-                                      </div>
-                                </v-flex>
-                              </v-layout>
-                              </v-container>
-                      </v-card-text>
-                  </v-card>
-              </v-flex>
-          </timeline-item>       
-        </timeline>
-      </v-layout>
-    </v-card-text>
-  </v-card>      
-    </v-flex>
-  </v-layout>
-  <!-- <img src="/images/background-tangan.png" class="img-tangan" width="80%" alt="" style="margin-bottom: -40px;"> -->
 </v-container>
 </template>
 

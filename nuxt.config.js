@@ -53,6 +53,7 @@ module.exports = {
     '@/plugins/vee-validate',
     '@/plugins/moment',
     '@/plugins/countdown',
+    '@/plugins/vue-lazyload',
     { src: '~plugins/ga.js', ssr: false }
   ],
 

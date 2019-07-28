@@ -11,7 +11,7 @@
           <v-flex v-for="room in rooms" :key="room.name" md4 xs6>
             <v-card class="elevation-0 cursor-pointer" color="transparent" @click.native.stop="openRoomInfo(room.name)">
               <v-card-title style="justify-content: center;">
-                <img :src="room.image" alt="" width="50%">
+                <img v-lazy="room.image" alt="" width="50%">
               </v-card-title>
               <v-card-text class="white--text">
                 <h4 class="title mb-1">{{ room.name }}</h4>
