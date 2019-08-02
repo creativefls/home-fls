@@ -1,7 +1,8 @@
 <template>
-  <v-layout column justify-center align-center>
+  <v-container class="pt-5" fluid style="background-image: url('/images/background.svg'); background-repeat: no-repeat; background-size: cover">
+  <v-layout mt-5 column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <div class="display-1">FLS Timeline 2019</div>
+      <div class="display-1 white--text">FLS Timeline 2019</div>
       <br class="my-2">
       <v-card>
         <v-chip style="margin-top: -16px;" class="ml-4" label color="urban" text-color="white">
@@ -263,7 +264,7 @@
       </v-card>
       <br class="my-4">
       <v-card>
-        <v-chip style="margin-top: -16px;" class="ml-4" label color="secondary" text-color="white">
+        <v-chip style="margin-top: -16px;" class="ml-4" label text-color="white" color="darken_grey">
           <div class="subheading">
             <v-icon medium class="white--text">event</v-icon>
             <b>FLS 2018</b>
@@ -277,13 +278,13 @@
                         <div class="headline grey">9 September 2018</div>
                         <div class="headline"><b>"Grab the Chance, Take the Charge!"</b></div><br>
                         <div>
-                          <b class="txt-secondary">2</b> Hari
-                          <b class="txt-secondary">6</b> Isu
-                          <b class="txt-secondary">15</b> Pembicara
+                          <b class="darken_grey--text">2</b> Hari
+                          <b class="darken_grey--text">6</b> Isu
+                          <b class="darken_grey--text">15</b> Pembicara
                         </div>
                         <div>
-                          <b class="txt-secondary">240</b> Peserta
-                          <b class="txt-secondary">25.512</b> Pendaftar
+                          <b class="darken_grey--text">240</b> Peserta
+                          <b class="darken_grey--text">4000</b> Pendaftar
                         </div>
                       </div>
                     </v-flex>
@@ -320,6 +321,7 @@
       <br class="my-4">
     </v-flex>
   </v-layout>
+  </v-container>
 </template>
 
 <script>

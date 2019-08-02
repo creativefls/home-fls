@@ -18,6 +18,7 @@ Vue.use(Vuetify, {
     creative: '#F1C40F',
     digital: '#2980B9',
     sci: '#9B59B6',
-    tourism: '#AF603E'
+    tourism: '#AF603E',
+    darken_grey: '#424242'
   }
 })

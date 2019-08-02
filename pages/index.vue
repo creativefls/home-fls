@@ -1,6 +1,6 @@
 <template>
   <v-container fluid style="background-image: url('/images/background.svg'); background-repeat: no-repeat; background-size: cover">
-    <img v-lazy="'/images/background.svg'" class="bg-hero" alt="">
+    <img class="bg-hero" alt="">
     <fls-hero></fls-hero>
     <fls-rooms></fls-rooms>
     <fls-theme></fls-theme>
