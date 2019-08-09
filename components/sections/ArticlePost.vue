@@ -37,6 +37,7 @@ export default {
   },
   methods: {
     fetchPosts () {
+      console.log('mulai')
       this.$axios.get('https://futureleadersummit.org/artikel/wp-json/wp/v2/posts', {
         params: {
           per_page: 3
@@ -45,6 +46,7 @@ export default {
         this.posts = response.data
         let promises = []
         this.posts.forEach(async (post) => {
+          console.log(post);
           promises.push(this.getThumbnail(post.featured_media))
         })
         Promise.all(promises).then(values => {
@@ -58,6 +60,9 @@ export default {
     },
     getThumbnail (mediaId) {
       console.log(mediaId, 'mulai humb')
+      if(mediaId == '0') {
+        return "https://picsum.photos/id/633/300/300?grayscale";
+      }
       return new Promise((resolve, reject) => {
         this.$axios.get('https://futureleadersummit.org/artikel/wp-json/wp/v2/media/' + mediaId)
           .then(response => {
