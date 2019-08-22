@@ -66,7 +66,7 @@
                       <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
                       <div class="title">
                           <v-icon left medium class="white--text">event</v-icon>
-                          <b>Caseplatform</b>
+                          <b>Case Room</b>
                       </div>
                       </v-chip>
                       <v-card-text>
@@ -106,6 +106,29 @@
                   </v-card>
               </v-flex>
           </timeline-item>
+          <timeline-item bg-color="#9dd8e0cc">
+                  <v-flex xs12 >
+                      <v-card hover flat>
+                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
+                      <div class="title">
+                          <v-icon left medium class="white--text">event</v-icon>
+                          <b>Grand Summit</b>
+                      </div>
+                      </v-chip>
+                      <v-card-text>
+                      <v-container fluid grid-list-lg>
+                              <v-layout row>
+                                <v-flex xs>
+                                      <div class="program-content">
+                                        Sesi ini merupakan sesi puncak dari inisiasi gagasan-gagasan para pemuda untuk membangun bangsa. Pada sesi ini delegates dikumpulkan pada satu ruangan. Metode pada sesi ini menggunakan Penta Helix Collaboration dimana keseluruhan delegates dibagi menjadi 5 kelompok besar dengan peran masing-masing yang berbeda (akademisi, pebisnis, komunitas, pemerintah, media). Sesi ini dimoderatori 1 atau 2 orang untuk memuluskan flow dari diskusi yang berlangsung. Harapannya hasil dari diskusi merupakan solusi riil dan berdasarkan pertimbangan peran yang diberikan.
+                                      </div>
+                                </v-flex>
+                              </v-layout>
+                              </v-container>
+                      </v-card-text>
+                  </v-card>
+              </v-flex>
+          </timeline-item>          
         </timeline>
       </v-layout>
       </v-card-text>
@@ -135,29 +158,6 @@
                                 <v-flex xs>
                                       <div class="program-content">
                                         Sesi ini bertujuan untuk mengenalkan kota Semarang sebagai salah satu destinasi pariwisata di Jawa Tengah. Objek-objek wisata yang dikunjungi mencakup landmark yang menjadi ciri khas kota Semarang seperti : Lawang Sewu, Simpang Lima, Kota Lama, Museum Ronggowarsito, Museum Mandala Bakti bahkan Kampung Pelangi. Sesi ini dapat dipandu perwakilan Dinas Pariwisata kota Semarang sebagai pemandu wisata dan penyampai informasi seputar semarang. Selain itu, pada sesi ini terdapat aksi sosial yang dilakukan delegates sebagai representasi peran pemuda.
-                                      </div>
-                                </v-flex>
-                              </v-layout>
-                              </v-container>
-                      </v-card-text>
-                  </v-card>
-              </v-flex>
-          </timeline-item>
-          <timeline-item bg-color="#9dd8e0cc">
-                  <v-flex xs12 >
-                      <v-card hover flat>
-                      <v-chip style="margin-top: -16px;" class="ml-4 py-1 px-3"  color="primary" text-color="white">
-                      <div class="title">
-                          <v-icon left medium class="white--text">event</v-icon>
-                          <b>Grand Summit</b>
-                      </div>
-                      </v-chip>
-                      <v-card-text>
-                      <v-container fluid grid-list-lg>
-                              <v-layout row>
-                                <v-flex xs>
-                                      <div class="program-content">
-                                        Sesi ini merupakan sesi puncak dari inisiasi gagasan-gagasan para pemuda untuk membangun bangsa. Pada sesi ini delegates dikumpulkan pada satu ruangan. Metode pada sesi ini menggunakan Penta Helix Collaboration dimana keseluruhan delegates dibagi menjadi 5 kelompok besar dengan peran masing-masing yang berbeda (akademisi, pebisnis, komunitas, pemerintah, media). Sesi ini dimoderatori 1 atau 2 orang untuk memuluskan flow dari diskusi yang berlangsung. Harapannya hasil dari diskusi merupakan solusi riil dan berdasarkan pertimbangan peran yang diberikan.
                                       </div>
                                 </v-flex>
                               </v-layout>
