@@ -14,7 +14,7 @@
     "@nuxtjs/axios": "^5.0.0",
     "@xkeshi/vue-countdown": "^1.0.0",
     "babel-polyfill": "^6.26.0",
-    "nuxt": "^1.0.0",
+    "nuxt": "^3.0.0",
     "sweetalert2": "^7.19.1",
     "vee-validate": "^2.0.6",
     "vue-cute-timeline": "^1.2.5",
@@ -26,6 +26,6 @@
   "devDependencies": {
     "cross-env": "^5.0.1",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1"
+    "stylus-loader": "^7.1.0"
   }
 }
